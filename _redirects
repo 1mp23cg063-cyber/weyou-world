@@ -1,4 +1,6 @@
-/Home.dc.html /index.html 301
-/About.dc.html /about.html 301
-/Features.dc.html /features.html 301
-/Contact.dc.html /contact.html 301
+/index.html /     301
+/about.html /about 301
+/features.html /features 301
+/contact.html /contact 301
+/src/* /404.html 404
+/seo/* /404.html 404

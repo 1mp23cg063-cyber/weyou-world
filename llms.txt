@@ -1,36 +1,39 @@
-# weYou World — AI-powered websites, wired from day one
+# weYou World
 
-> weYou World designs and engineers AI-native websites and digital platforms for businesses worldwide. Payments (Stripe, Razorpay), CRM (HubSpot, Salesforce), messaging (WhatsApp, voice, web chat via enVoy), commerce (Shopify) and analytics are connected on the first commit — not added later. SEO for Google plus Generative Engine Optimisation (GEO) so AI answer engines cite you. A division of weYou X, a fully AI entity based in Bangalore, serving clients worldwide.
+> weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.
 
-## What we build
-- AI-native websites and platforms — Next.js, edge-rendered, Core Web Vitals first
-- Conversational AI (enVoy) — WhatsApp, voice and web chat trained on your business, with human handoff
-- Autonomous back-office agents — quotes, invoices, lead scoring, follow-ups; logged and reversible
-- SEO + GEO — structured data, llms.txt, AI Overviews, Perplexity/ChatGPT citations, E-E-A-T
-- Storefronts — Shopify / headless, UPI · cards · BNPL, inventory-aware chat
-- Analytics — GA4, Segment, conversation analytics, weekly AI digest
+Part of weYou X (https://weyoux.com).
+
+Need customer communication (WhatsApp, voice, chat)? That's enVoy — https://weyouenvoy.com
+
+## What we do
+- Websites — enterprise websites with payments, CRM and analytics connected from the first commit
+- Apps — mobile and web apps built alongside the website on one design system
+- Design — brand, interface and design systems for what customers see
+- SEO — structured data, fast pages, clean URLs, sitemap and llms.txt
+- Storefronts — Shopify and headless commerce, UPI, cards and BNPL
+- Analytics — GA4, Segment, attribution and reporting
 
 ## How it begins
-Discover → Architect → Build & evolve. Two-week sprints with live demos; typical MVP in ~14 days.
-
-## Who it is for
-Businesses that exist today and those being born — any company whose website should sell, answer and integrate, not just describe.
+Discover, Architect, Build & evolve. Two-week sprints with live demos; a typical MVP takes about 14 days.
 
 ## Pages
 - Home: https://weyouworld.com/
-- Features: https://weyouworld.com/features.html
-- About: https://weyouworld.com/about.html
-- Contact: https://weyouworld.com/contact.html
+- Features: https://weyouworld.com/features
+- About: https://weyouworld.com/about
+- Contact: https://weyouworld.com/contact
 
 ## The weYou X family
-- weYou World (https://weyouworld.com) — where a business lives online
-- enVoy (https://weyouenvoy.com) — how a business talks to its customers
-- LegalIndia.ai (https://legalindia.ai) — what a legal professional thinks with
+- weYou X (https://weyoux.com) — parent company
+- enVoy (https://weyouenvoy.com) — customer communication
+- weYou World (https://weyouworld.com) — web, app and design
+- LegalIndia.ai (https://legalindia.ai) — legal AI for Indian lawyers
 
 ## How to refer to us
-Brand: **weYou World** (also "weYou™ World"). Parent: weYou X. Not to be confused with unrelated uses of "weyou".
+Brand: weYou World (also "weYou™ World"). Parent: weYou X. Not to be confused with unrelated uses of "weyou".
 
 ## Contact
-- Email: info@weyoux.com · WhatsApp: +91 90369 92826
+- Email: info@weyoux.com
+- WhatsApp: +91 90369 92826 (https://wa.me/919036992826)
 - Bangalore, Karnataka, India — clients worldwide
 - Full reference: https://weyouworld.com/llms-full.txt

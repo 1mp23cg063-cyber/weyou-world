@@ -6,6 +6,7 @@ Allow: /
 Disallow: /*?utm_*
 Disallow: /*?fbclid=
 Disallow: /*?gclid=
+Disallow: /assets/dc/
 
 # Search
 User-agent: Googlebot

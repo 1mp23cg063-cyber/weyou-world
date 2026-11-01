@@ -1,0 +1,13 @@
+{
+  "name": "weyou-world",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "weYou World website — design-component sources in src/, pre-rendered to static HTML by build/prerender.mjs",
+  "scripts": {
+    "build": "node build/prerender.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.0"
+  }
+}
