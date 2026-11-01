@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400;1,6..72,500&family=DM+Sans:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+@keyframes wmWipe1{0%{clip-path:inset(0 100% 0 0)}6.0%,20.0%{clip-path:inset(0 0 0 0)}26.0%,100%{clip-path:inset(0 0 0 100%)}}
+@keyframes wmWipe2{0%,20.0%{clip-path:inset(0 100% 0 0)}26.0%,40.0%{clip-path:inset(0 0 0 0)}46.0%,100%{clip-path:inset(0 0 0 100%)}}
+@keyframes wmWipe3{0%,40.0%{clip-path:inset(0 100% 0 0)}46.0%,60.0%{clip-path:inset(0 0 0 0)}66.0%,100%{clip-path:inset(0 0 0 100%)}}
+@keyframes wmWipe4{0%,60.0%{clip-path:inset(0 100% 0 0)}66.0%,80.0%{clip-path:inset(0 0 0 0)}86.0%,100%{clip-path:inset(0 0 0 100%)}}
+@keyframes wmWipe5{0%{clip-path:inset(0 0 0 0)}6%,80%{clip-path:inset(0 0 0 100%)}80.1%{clip-path:inset(0 100% 0 0)}86%,100%{clip-path:inset(0 0 0 0)}}
+@keyframes wmSand{0%{left:-8%;opacity:1}6%{left:104%;opacity:1}6.1%,19.9%{left:-8%;opacity:0}20%{left:-8%;opacity:1}26%{left:104%;opacity:1}26.1%,39.9%{left:-8%;opacity:0}40%{left:-8%;opacity:1}46%{left:104%;opacity:1}46.1%,59.9%{left:-8%;opacity:0}60%{left:-8%;opacity:1}66%{left:104%;opacity:1}66.1%,79.9%{left:-8%;opacity:0}80%{left:-8%;opacity:1}86%{left:104%;opacity:1}86.1%,100%{left:-8%;opacity:0}}
+@keyframes wmDust{0%{opacity:0;transform:translateY(.2em) scale(.4)}3%{opacity:1}14%,100%{opacity:0;transform:translateY(-.9em) scale(1)}}
+@keyframes wmSpec{0%{color:#c2274a}6%{color:#c2681f}12%{color:#a8841f}18%{color:#1f8a5c}24%{color:#1b7f9c}30%{color:#6f4f92}33%{color:#c2274a}100%{color:#c2274a}}
+@keyframes wmHue{0%{filter:hue-rotate(0deg) saturate(1)}50%{filter:hue-rotate(28deg) saturate(1.15)}100%{filter:hue-rotate(0deg) saturate(1)}}
+@keyframes wmHueSpectrum{0%{filter:hue-rotate(0deg)}100%{filter:hue-rotate(360deg)}}
+@keyframes wmNone{}
+@keyframes wmGlint{0%,78%{transform:translateX(-130%) skewX(-20deg);opacity:0}82%{opacity:1}100%{transform:translateX(230%) skewX(-20deg);opacity:0}}
+@keyframes wmStar{0%,100%{opacity:0;transform:scale(.3) rotate(0deg)}50%{opacity:1;transform:scale(1) rotate(180deg)}}
+@keyframes wmBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-1px)}}
+@keyframes wmRise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes breathe{0%,100%{box-shadow:0 0 0 0 rgba(201,162,39,.25)}50%{box-shadow:0 0 0 8px rgba(201,162,39,0)}}
+@keyframes menuIn{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+@keyframes shine{0%{background-position:200% center}100%{background-position:-200% center}}
+</style>
+</helmet>
+
+<sc-if value="{{ notMobile }}" hint-placeholder-val="{{ true }}">
+<header style="position:fixed;top:0;left:0;right:0;z-index:100;height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 clamp(16px,4vw,40px);background:rgba(255,255,255,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(11,18,32,0.08);font-family:'DM Sans',sans-serif">
+  <a href="Home.dc.html" aria-label="weYou World home" style="position:relative;display:grid;width:6.6em;height:1.3em;overflow:visible;text-decoration:none;font-size:24px;line-height:1.3">
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'DM Sans',sans-serif;font-weight:500;font-style:normal;letter-spacing:.005em;font-size:1em;animation:{{ wmW1 }} 20s linear infinite"><span style="color:#1b7f9c">we</span><span style="color:#7a5a99">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#c9a227">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Newsreader',serif;font-weight:500;font-style:italic;letter-spacing:0;font-size:1em;animation:{{ wmW2 }} 20s linear infinite"><span style="color:#7a5a99">we</span><span style="color:#c9a227">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#1b7f9c">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Cormorant Garamond',serif;font-weight:600;font-style:normal;letter-spacing:.02em;font-size:1em;animation:{{ wmW3 }} 20s linear infinite"><span style="color:#c9a227">we</span><span style="color:#1b7f9c">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#7a5a99">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Josefin Sans',sans-serif;font-weight:400;font-style:normal;letter-spacing:.05em;font-size:1em;animation:{{ wmW4 }} 20s linear infinite"><span style="color:#1b7f9c">we</span><span style="color:#c9a227">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#7a5a99">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;letter-spacing:.01em;font-size:1em;animation:{{ wmW5 }} 20s linear infinite"><span style="color:#7a5a99">we</span><span style="color:#1b7f9c">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#c9a227">World</span></span>
+    <span style="position:absolute;top:-.1em;bottom:-.1em;left:-6%;width:.5em;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(232,208,120,.55),rgba(255,255,255,.9),rgba(201,169,224,.5),transparent);filter:blur(2px);animation:wmSand 20s linear infinite"></span>
+    <span style="position:absolute;right:.1em;top:-.3em;font-size:.36em;line-height:1;color:#e8d078;text-shadow:0 0 8px rgba(232,208,120,.9);pointer-events:none;animation:wmStar 6s ease-in-out infinite 1s">✦</span>
+  </a>
+  <nav style="display:flex;align-items:center;gap:clamp(18px,3vw,40px);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">
+    <a href="Home.dc.html" style="color:#0b1220;padding-bottom:2px;border-bottom:1.5px solid {{ homeLine }}">Home</a>
+    <a href="About.dc.html" style="color:#0b1220;padding-bottom:2px;border-bottom:1.5px solid {{ aboutLine }}">About</a>
+    <a href="Features.dc.html" style="color:#0b1220;padding-bottom:2px;border-bottom:1.5px solid {{ featuresLine }}">Features</a>
+    <a href="Contact.dc.html" style="color:#0b1220;padding-bottom:2px;border-bottom:1.5px solid {{ contactLine }}">Contact</a>
+    <a href="https://weyoux.com" style="color:#0b1220;border:1.5px solid #c9a227;border-radius:20px;padding:7px 16px;transition:background .3s,color .3s" style-hover="background:#c9a227;color:#040c16">enVoy</a>
+    <a href="Contact.dc.html" style="color:#040c16;font-weight:700;letter-spacing:.08em;border-radius:20px;padding:9px 20px;background:linear-gradient(135deg,#f6ebb8 0%,#e8d078 35%,#c9a227 70%,#e2c65a 100%);background-size:200% auto;animation:shine 5s linear infinite;box-shadow:0 10px 30px rgba(201,162,39,.45),0 2px 6px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.5)">Inquiries</a>
+  </nav>
+</header>
+<div style="position:fixed;right:18px;top:50vh;transform:translateY(-50%);z-index:120;display:flex;flex-direction:column;gap:14px;font-family:'DM Sans',sans-serif">
+  <a href="https://wa.me/919036992826" aria-label="WhatsApp" style="width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(232,208,120,.18);border:1px solid rgba(201,162,39,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#a8841f;font-size:11px;font-weight:700;letter-spacing:.06em;animation:breathe 7s ease-in-out infinite">WA</a>
+  <a href="mailto:info@weyoux.com" aria-label="Email" style="width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(232,208,120,.18);border:1px solid rgba(201,162,39,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#a8841f;font-size:13px;font-weight:700;animation:breathe 7s ease-in-out infinite 3.5s">@</a>
+</div>
+</sc-if>
+
+<sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+<header style="position:fixed;top:0;left:0;right:0;z-index:100;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 16px;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(11,18,32,0.08);font-family:'DM Sans',sans-serif">
+  <a href="Home.dc.html" aria-label="weYou World home" style="position:relative;display:grid;width:6.6em;height:1.3em;overflow:visible;text-decoration:none;font-size:20px;line-height:1.3">
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'DM Sans',sans-serif;font-weight:500;font-style:normal;letter-spacing:.005em;font-size:1em;animation:{{ wmW1 }} 20s linear infinite"><span style="color:#1b7f9c">we</span><span style="color:#7a5a99">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#c9a227">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Newsreader',serif;font-weight:500;font-style:italic;letter-spacing:0;font-size:1em;animation:{{ wmW2 }} 20s linear infinite"><span style="color:#7a5a99">we</span><span style="color:#c9a227">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#1b7f9c">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Cormorant Garamond',serif;font-weight:600;font-style:normal;letter-spacing:.02em;font-size:1em;animation:{{ wmW3 }} 20s linear infinite"><span style="color:#c9a227">we</span><span style="color:#1b7f9c">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#7a5a99">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Josefin Sans',sans-serif;font-weight:400;font-style:normal;letter-spacing:.05em;font-size:1em;animation:{{ wmW4 }} 20s linear infinite"><span style="color:#1b7f9c">we</span><span style="color:#c9a227">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#7a5a99">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;letter-spacing:.01em;font-size:1em;animation:{{ wmW5 }} 20s linear infinite"><span style="color:#7a5a99">we</span><span style="color:#1b7f9c">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#c9a227">World</span></span>
+    <span style="position:absolute;top:-.1em;bottom:-.1em;left:-6%;width:.5em;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(232,208,120,.55),rgba(255,255,255,.9),rgba(201,169,224,.5),transparent);filter:blur(2px);animation:wmSand 20s linear infinite"></span>
+    <span style="position:absolute;right:.1em;top:-.3em;font-size:.36em;line-height:1;color:#e8d078;text-shadow:0 0 8px rgba(232,208,120,.9);pointer-events:none;animation:wmStar 6s ease-in-out infinite 1s">✦</span>
+  </a>
+  <div style="display:flex;align-items:center;gap:12px">
+    <a href="Contact.dc.html" style="color:#040c16;font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border-radius:18px;padding:9px 14px;background:linear-gradient(135deg,#e8d078,#c9a227);box-shadow:0 6px 18px rgba(201,162,39,.3),inset 0 1px 0 rgba(255,255,255,.5)">Inquiries</a>
+    <button aria-label="Menu" onClick="{{ toggle }}" style="width:44px;height:44px;border:0;background:transparent;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:7px;cursor:pointer;padding:0"><span style="display:block;width:28px;height:2px;background:#0b1220"></span><span style="display:block;width:28px;height:2px;background:#0b1220"></span><span style="display:block;width:28px;height:2px;background:#0b1220"></span></button>
+  </div>
+</header>
+<sc-if value="{{ open }}" hint-placeholder-val="{{ false }}">
+<div style="position:fixed;top:0;left:0;right:0;height:100vh;z-index:200;background:#fff;display:flex;flex-direction:column;padding:16px;animation:menuIn .3s ease both;font-family:'DM Sans',sans-serif">
+  <div style="display:flex;justify-content:flex-end"><button aria-label="Close menu" onClick="{{ toggle }}" style="width:44px;height:44px;border:0;background:transparent;font-size:26px;color:#0b1220;cursor:pointer">×</button></div>
+  <nav style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;font-family:'Newsreader',serif;font-weight:300;font-size:28px">
+    <a href="Home.dc.html" style="color:#0b1220">Home</a>
+    <a href="About.dc.html" style="color:#0b1220">About</a>
+    <a href="Features.dc.html" style="color:#0b1220">Features</a>
+    <a href="Contact.dc.html" style="color:#0b1220">Contact</a>
+    <a href="https://weyoux.com" style="color:#0b1220;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid #c9a227;border-radius:20px;padding:10px 22px;margin-top:10px">enVoy</a>
+  </nav>
+</div>
+</sc-if>
+<div style="position:fixed;right:10px;top:50vh;transform:translateY(-50%);z-index:120;display:flex;flex-direction:column;gap:10px;font-family:'DM Sans',sans-serif">
+  <a href="https://wa.me/919036992826" aria-label="WhatsApp" style="width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(232,208,120,.22);border:1px solid rgba(201,162,39,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#a8841f;font-size:10px;font-weight:700;letter-spacing:.06em;animation:breathe 7s ease-in-out infinite">WA</a>
+  <a href="mailto:info@weyoux.com" aria-label="Email" style="width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(232,208,120,.22);border:1px solid rgba(201,162,39,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#a8841f;font-size:12px;font-weight:700;animation:breathe 7s ease-in-out infinite 3.5s">@</a>
+</div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:120},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;home&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;about&quot;,&quot;features&quot;,&quot;contact&quot;],&quot;tsType&quot;:&quot;string&quot;},&quot;mobile&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;},&quot;wordmark&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;brand&quot;,&quot;options&quot;:[&quot;brand&quot;,&quot;spectrum&quot;,&quot;static&quot;],&quot;tsType&quot;:&quot;'brand'|'spectrum'|'static'&quot;}}">
+class Component extends DCLogic {
+  state = { open: false };
+  renderVals() {
+    const m = !!this.props.mobile, a = this.props.active ?? '', mode = this.props.wordmark ?? 'brand';
+    const line = k => a === k ? '#c9a227' : 'transparent';
+    return {
+      isMobile: m, notMobile: !m, open: this.state.open,
+      toggle: () => this.setState(s => ({ open: !s.open })),
+      wmW1: mode === 'static' ? 'wmNone' : 'wmWipe1', wmW2: mode === 'static' ? 'wmNone' : 'wmWipe2', wmW3: mode === 'static' ? 'wmNone' : 'wmWipe3', wmW4: mode === 'static' ? 'wmNone' : 'wmWipe4', wmW5: mode === 'static' ? 'wmNone' : 'wmWipe5',
+      homeLine: line('home'), aboutLine: line('about'), featuresLine: line('features'), contactLine: line('contact')
+    };
+  }
+}
+</script>
+</body>
+</html>

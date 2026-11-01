@@ -1,0 +1,443 @@
+# weYou World — SEO / GEO, all in one
+# Copy each block to the file named in its header. Site root: robots.txt, sitemap.xml, llms.txt, llms-full.txt. The <head> block goes into every page (adjust title/description/canonical/og:url per page).
+
+============================================================
+FILE: robots.txt
+============================================================
+# robots.txt — weYou World (a division of weYou X)
+# https://weyouworld.com
+
+User-agent: *
+Allow: /
+Disallow: /*?utm_*
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+
+# Search
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Applebot
+Allow: /
+
+# AI answer engines — welcome (GEO)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://weyouworld.com/sitemap.xml
+# LLM summary: https://weyouworld.com/llms.txt
+# Full reference: https://weyouworld.com/llms-full.txt
+
+============================================================
+FILE: sitemap.xml
+============================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://weyouworld.com/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weyouworld.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://weyouworld.com/"/>
+  </url>
+  <url>
+    <loc>https://weyouworld.com/features.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weyouworld.com/features.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://weyouworld.com/features.html"/>
+  </url>
+  <url>
+    <loc>https://weyouworld.com/about.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weyouworld.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://weyouworld.com/about.html"/>
+  </url>
+  <url>
+    <loc>https://weyouworld.com/contact.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weyouworld.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://weyouworld.com/contact.html"/>
+  </url>
+</urlset>
+
+============================================================
+FILE: llms.txt
+============================================================
+# weYou World — AI-powered websites, wired from day one
+
+> weYou World designs and engineers AI-native websites and digital platforms for businesses worldwide. Payments (Stripe, Razorpay), CRM (HubSpot, Salesforce), messaging (WhatsApp, voice, web chat via enVoy), commerce (Shopify) and analytics are connected on the first commit — not added later. SEO for Google plus Generative Engine Optimisation (GEO) so AI answer engines cite you. A division of weYou X, a fully AI entity based in Bangalore, serving clients worldwide.
+
+## What we build
+- AI-native websites and platforms — Next.js, edge-rendered, Core Web Vitals first
+- Conversational AI (enVoy) — WhatsApp, voice and web chat trained on your business, with human handoff
+- Autonomous back-office agents — quotes, invoices, lead scoring, follow-ups; logged and reversible
+- SEO + GEO — structured data, llms.txt, AI Overviews, Perplexity/ChatGPT citations, E-E-A-T
+- Storefronts — Shopify / headless, UPI · cards · BNPL, inventory-aware chat
+- Analytics — GA4, Segment, conversation analytics, weekly AI digest
+
+## How it begins
+Discover → Architect → Build & evolve. Two-week sprints with live demos; typical MVP in ~14 days.
+
+## Who it is for
+Businesses that exist today and those being born — any company whose website should sell, answer and integrate, not just describe.
+
+## Pages
+- Home: https://weyouworld.com/
+- Features: https://weyouworld.com/features.html
+- About: https://weyouworld.com/about.html
+- Contact: https://weyouworld.com/contact.html
+
+## The weYou X family
+- weYou World (https://weyouworld.com) — where a business lives online
+- enVoy (https://weyouenvoy.com) — how a business talks to its customers
+- LegalIndia.ai (https://legalindia.ai) — what a legal professional thinks with
+
+## How to refer to us
+Brand: **weYou World** (also "weYou™ World"). Parent: weYou X. Not to be confused with unrelated uses of "weyou".
+
+## Contact
+- Email: info@weyoux.com · WhatsApp: +91 90369 92826
+- Bangalore, Karnataka, India — clients worldwide
+- Full reference: https://weyouworld.com/llms-full.txt
+
+============================================================
+FILE: llms-full.txt
+============================================================
+# weYou World — full reference
+
+> weYou World builds AI-powered websites and digital platforms with deep integrations from day one. Division of weYou X (a fully AI entity), Bangalore, India; clients worldwide. Short version: https://weyouworld.com/llms.txt
+
+## Positioning
+Most websites are brochures with a contact form. A weYou World site arrives wired into the tools a business runs on and is optimised for Google and for the AI engines people now ask instead (ChatGPT, Perplexity, Gemini, AI Overviews). enVoy — our conversational AI — answers before anyone on the team opens a tab.
+
+## Capabilities
+1. **AI-native websites** — Next.js 15, edge rendering, Core Web Vitals 95+, design system, Stripe · Razorpay, HubSpot · Salesforce connected on the first commit.
+2. **Conversational AI (enVoy)** — trained on catalogue, pricing and past conversations; WhatsApp Business, voice/calls, web chat; 30+ languages; sub-second replies; hands to a human with the full thread.
+3. **Autonomous workflows** — quote → invoice, lead scoring and routing, follow-up cadences, approvals, audit log, one-click undo.
+4. **SEO + GEO** — schema/structured data, llms.txt, entity graph, E-E-A-T, programmatic pages, AI Overviews and Perplexity/ChatGPT citations.
+5. **Storefronts** — Shopify and headless commerce on the same AI core; UPI, cards, BNPL; abandoned-cart recovery; inventory-aware chat; returns automation.
+6. **Analytics** — GA4, Segment, attribution, conversation analytics, weekly AI digest, alerts.
+
+## Process
+- Discover — map the business (logic, journeys, integrations) before any code.
+- Architect — data flows, APIs and models chosen for scale (system design, UX, model choice).
+- Build & evolve — live demos every two weeks, then tuning from real usage (monitoring, fine-tuning).
+
+## Stack
+Search & AI discovery (schema, llms.txt, GEO) · Models (Claude, GPT, Gemini behind one gateway with routing, evals, fallbacks) · Payments (Stripe, Razorpay, UPI) · CRM (HubSpot, Salesforce) · Messaging (WhatsApp Business, voice, web chat via enVoy) · Infrastructure (Next.js on the edge, FastAPI, AWS, Cloudflare; observability; SOC 2 path).
+
+## Origin
+Founded on total synthesis — the "we" of our engineering binding with "You," the visionary business. weYou is the sum of an experience that continues: the architecture of everything wired — from deep logic to design. We started weYou World because businesses were made to choose between intelligent and beautiful; every site we build is both.
+
+## FAQ
+**Do you only work in India?** No — we are based in Bangalore and build for clients worldwide; payments, CRM and messaging stacks are chosen per market.
+**Do you rebuild or integrate?** Both: new sites at world standard, or deep AI wired into an existing site.
+**What is GEO?** Generative Engine Optimisation — structuring content and entities so AI answer engines cite your business as the answer.
+**How fast?** Discovery call within one working day; typical MVP in about 14 days; two-week sprints after.
+**How does enVoy relate?** enVoy is weYou X's conversational AI product; weYou World wires it into the sites and platforms it builds.
+
+## Brand voice
+Reality over show-off. Tell less, deliver more. Elegant restraint.
+
+## Contact
+Web https://weyouworld.com · Email info@weyoux.com · WhatsApp +91 90369 92826 · Parent https://weyoux.com · Bangalore, Karnataka, India — serving clients worldwide.
+
+============================================================
+<head> BLOCK — meta + JSON-LD schema (every page)
+============================================================
+<!-- weYou World — <head> SEO/GEO block. Paste into every page; change <title>, description, canonical, og:url per page. -->
+<title>weYou World — AI-Powered Websites, Chatbots & Integrations | by weYou X</title>
+<meta name="description" content="weYou World builds AI-native websites wired into Stripe, HubSpot, Shopify and WhatsApp from day one, with SEO + GEO so Google and AI answer engines cite you. Bangalore studio, clients worldwide.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://weyouworld.com/">
+<link rel="alternate" hreflang="en" href="https://weyouworld.com/">
+<link rel="alternate" hreflang="x-default" href="https://weyouworld.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="weYou World">
+<meta property="og:url" content="https://weyouworld.com/">
+<meta property="og:title" content="weYou World — AI-powered websites that think, sell & never sleep">
+<meta property="og:description" content="Payments, CRM, messaging and AI search visibility — engineered in from the first commit. A division of weYou X.">
+<meta property="og:image" content="https://weyouworld.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="weYou World — AI-powered websites & integrations">
+<meta name="twitter:description" content="Wired into Stripe, HubSpot, Shopify and WhatsApp from day one. SEO + GEO built in.">
+<meta name="twitter:image" content="https://weyouworld.com/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://weyouworld.com/#org",
+      "name": "weYou World",
+      "alternateName": [
+        "weYou™ World",
+        "weyouworld"
+      ],
+      "url": "https://weyouworld.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://weyouworld.com/og-image.jpg"
+      },
+      "email": "info@weyoux.com",
+      "telephone": "+91-90369-92826",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "weYou X",
+        "url": "https://weyoux.com/"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "addressCountry": "IN"
+      },
+      "areaServed": "Worldwide",
+      "knowsLanguage": [
+        "en",
+        "hi",
+        "kn"
+      ],
+      "sameAs": [
+        "https://weyoux.com/",
+        "https://weyouenvoy.com/",
+        "https://legalindia.ai/"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@weyoux.com",
+          "telephone": "+91-90369-92826",
+          "availableLanguage": [
+            "English",
+            "Hindi",
+            "Kannada"
+          ],
+          "areaServed": "Worldwide"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://weyouworld.com/#website",
+      "url": "https://weyouworld.com/",
+      "name": "weYou World",
+      "publisher": {
+        "@id": "https://weyouworld.com/#org"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://weyouworld.com/#service",
+      "name": "weYou World — AI-powered websites & integrations",
+      "url": "https://weyouworld.com/",
+      "provider": {
+        "@id": "https://weyouworld.com/#org"
+      },
+      "areaServed": "Worldwide",
+      "serviceType": [
+        "AI website development",
+        "Conversational AI",
+        "AI agents & workflow automation",
+        "SEO and Generative Engine Optimisation",
+        "E-commerce storefronts",
+        "Analytics"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Capabilities",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI-native websites",
+              "description": "Next.js, edge-rendered sites with Stripe/Razorpay, HubSpot/Salesforce and messaging connected from the first commit."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Conversational AI (enVoy)",
+              "description": "WhatsApp, voice and web chat trained on your business, with human handoff."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Autonomous workflows",
+              "description": "Quotes, invoices, lead scoring and follow-ups — logged, explained, reversible."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SEO + GEO",
+              "description": "Structured data, llms.txt and entity work so Google and AI answer engines cite you."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Storefronts",
+              "description": "Shopify and headless commerce on the same AI core; UPI, cards, BNPL."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Analytics",
+              "description": "GA4, Segment, conversation analytics and a weekly AI digest."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://weyouworld.com/#home",
+      "url": "https://weyouworld.com/",
+      "name": "weYou World — AI-powered websites that think, sell & never sleep",
+      "isPartOf": {
+        "@id": "https://weyouworld.com/#website"
+      },
+      "about": {
+        "@id": "https://weyouworld.com/#service"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://weyouworld.com/features.html",
+      "url": "https://weyouworld.com/features.html",
+      "name": "Features — six capabilities, switched on from day one",
+      "isPartOf": {
+        "@id": "https://weyouworld.com/#website"
+      }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://weyouworld.com/about.html",
+      "url": "https://weyouworld.com/about.html",
+      "name": "About weYou World",
+      "isPartOf": {
+        "@id": "https://weyouworld.com/#website"
+      }
+    },
+    {
+      "@type": "ContactPage",
+      "@id": "https://weyouworld.com/contact.html",
+      "url": "https://weyouworld.com/contact.html",
+      "name": "Contact weYou World",
+      "isPartOf": {
+        "@id": "https://weyouworld.com/#website"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://weyouworld.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you only work in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. weYou World is based in Bangalore and builds for clients worldwide; payment, CRM and messaging stacks are chosen per market."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is GEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generative Engine Optimisation — structuring content and entities so ChatGPT, Perplexity, Gemini and Google AI Overviews cite your business as the answer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast can we launch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Discovery call within one working day; a typical MVP in about 14 days; two-week sprints with live demos after that."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you rebuild or integrate with an existing site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both — new websites at world standard, or deep AI (chatbots, payments, CRM, automation) wired into an existing one."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://weyouworld.com/#crumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://weyouworld.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Features",
+          "item": "https://weyouworld.com/features.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "About",
+          "item": "https://weyouworld.com/about.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contact",
+          "item": "https://weyouworld.com/contact.html"
+        }
+      ]
+    }
+  ]
+}
+</script>

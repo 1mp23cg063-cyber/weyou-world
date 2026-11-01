@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400;1,6..72,500&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#fff;color:#0b1220;font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#1b7f9c;text-decoration:none}a:hover{color:#a8841f}
+input{font-family:'DM Sans',sans-serif}
+@keyframes charIn{from{opacity:0;transform:translateY(24px) rotateX(-60deg);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+@keyframes heroIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes cardIn{from{opacity:0;transform:perspective(900px) rotateX(12deg) translateY(30px)}to{opacity:1;transform:none}}
+@keyframes aurora{0%{transform:translate(-6%,-4%) rotate(0deg) scale(1)}50%{transform:translate(6%,4%) rotate(8deg) scale(1.08)}100%{transform:translate(-6%,-4%) rotate(0deg) scale(1)}}
+@keyframes aurora2{0%{transform:translate(5%,6%) scale(1.05)}50%{transform:translate(-5%,-6%) scale(.95)}100%{transform:translate(5%,6%) scale(1.05)}}
+@keyframes wave{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes shine{0%{background-position:200% center}100%{background-position:-200% center}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes glaze{0%{transform:translateX(-160%) skewX(-18deg)}60%{transform:translateX(260%) skewX(-18deg)}100%{transform:translateX(260%) skewX(-18deg)}}
+@keyframes sparkle{0%{transform:translateX(-140%) skewX(-18deg)}55%{transform:translateX(240%) skewX(-18deg)}100%{transform:translateX(240%) skewX(-18deg)}}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.2) rotate(0deg)}50%{opacity:1;transform:scale(1) rotate(180deg)}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes orbit{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes orbitRev{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
+@keyframes pulseRing{0%,100%{opacity:.4}50%{opacity:.9}}
+@keyframes arch{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes haloSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+@keyframes wmWipe1{0%{clip-path:inset(0 100% 0 0)}6.0%,20.0%{clip-path:inset(0 0 0 0)}26.0%,100%{clip-path:inset(0 0 0 100%)}}
+@keyframes wmWipe2{0%,20.0%{clip-path:inset(0 100% 0 0)}26.0%,40.0%{clip-path:inset(0 0 0 0)}46.0%,100%{clip-path:inset(0 0 0 100%)}}
+@keyframes wmWipe3{0%,40.0%{clip-path:inset(0 100% 0 0)}46.0%,60.0%{clip-path:inset(0 0 0 0)}66.0%,100%{clip-path:inset(0 0 0 100%)}}
+@keyframes wmWipe4{0%,60.0%{clip-path:inset(0 100% 0 0)}66.0%,80.0%{clip-path:inset(0 0 0 0)}86.0%,100%{clip-path:inset(0 0 0 100%)}}
+@keyframes wmWipe5{0%{clip-path:inset(0 0 0 0)}6%,80%{clip-path:inset(0 0 0 100%)}80.1%{clip-path:inset(0 100% 0 0)}86%,100%{clip-path:inset(0 0 0 0)}}
+@keyframes wmSand{0%{left:-8%;opacity:1}6%{left:104%;opacity:1}6.1%,19.9%{left:-8%;opacity:0}20%{left:-8%;opacity:1}26%{left:104%;opacity:1}26.1%,39.9%{left:-8%;opacity:0}40%{left:-8%;opacity:1}46%{left:104%;opacity:1}46.1%,59.9%{left:-8%;opacity:0}60%{left:-8%;opacity:1}66%{left:104%;opacity:1}66.1%,79.9%{left:-8%;opacity:0}80%{left:-8%;opacity:1}86%{left:104%;opacity:1}86.1%,100%{left:-8%;opacity:0}}
+@keyframes wmDust{0%{opacity:0;transform:translateY(.2em) scale(.4)}3%{opacity:1}14%,100%{opacity:0;transform:translateY(-.9em) scale(1)}}
+@keyframes wmSpec{0%{color:#c2274a}6%{color:#c2681f}12%{color:#a8841f}18%{color:#1f8a5c}24%{color:#1b7f9c}30%{color:#6f4f92}33%{color:#c2274a}100%{color:#c2274a}}
+@keyframes wmHue{0%{filter:hue-rotate(0deg) saturate(1)}50%{filter:hue-rotate(28deg) saturate(1.15)}100%{filter:hue-rotate(0deg) saturate(1)}}
+@keyframes wmHueSpectrum{0%{filter:hue-rotate(0deg)}100%{filter:hue-rotate(360deg)}}
+@keyframes wmNone{}
+@keyframes wmGlint{0%,78%{transform:translateX(-130%) skewX(-20deg);opacity:0}82%{opacity:1}100%{transform:translateX(230%) skewX(-20deg);opacity:0}}
+@keyframes wmStar{0%,100%{opacity:0;transform:scale(.3) rotate(0deg)}50%{opacity:1;transform:scale(1) rotate(180deg)}}
+@keyframes wmBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-1px)}}
+@keyframes wmRise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes breathe{0%,100%{box-shadow:0 0 0 0 rgba(201,162,39,.25)}50%{box-shadow:0 0 0 8px rgba(201,162,39,0)}}
+@keyframes menuIn{from{opacity:0}to{opacity:1}}
+@keyframes wmCycle{0%{color:#7fd4e8}11%{color:#c9a9e0}22%{color:#e8d078}33%{color:#7fd4e8}100%{color:#7fd4e8}}
+@keyframes wmCycle2{0%{color:#c9a9e0}11%{color:#e8d078}22%{color:#7fd4e8}33%{color:#c9a9e0}100%{color:#c9a9e0}}
+@keyframes wmCycle3{0%{color:#e8d078}11%{color:#7fd4e8}22%{color:#c9a9e0}33%{color:#e8d078}100%{color:#e8d078}}
+/*rhythm*/[data-screen-label]>section{padding-top:clamp(48px,7vw,96px)!important;padding-bottom:clamp(48px,7vw,96px)!important}[data-screen-label]>section:first-of-type{min-height:0!important;padding-top:clamp(120px,16vw,140px)!important;padding-bottom:clamp(72px,11vw,104px)!important}[data-screen-label]>section:nth-of-type(2){padding-top:clamp(56px,8vw,80px)!important}[data-screen-label]>section:first-of-type>div[style*="z-index:2"],[data-screen-label]>section:first-of-type>div[style*="z-index: 2"]{gap:clamp(20px,3vw,26px)!important}
+/*mq*/@media(max-width:899px){[data-desk]{display:none!important}[data-mob]{display:flex!important}[data-center]{text-align:center!important;align-items:center!important;justify-content:center!important}[data-stack]{grid-template-columns:1fr!important;flex-direction:column!important}}
+</style>
+</helmet>
+
+<div ref="{{ rootRef }}" data-screen-label="Contact" style="container-type:inline-size;position:relative;min-height:100vh;background:#fff;font-family:'DM Sans',sans-serif;color:#0b1220">
+<header data-desk="1" style="position:fixed;top:0;left:0;right:0;z-index:100;height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 clamp(16px,4vw,40px);background:rgba(255,255,255,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(11,18,32,0.08);font-family:'DM Sans',sans-serif">
+  <a href="Home.dc.html" aria-label="weYou World home" style="position:relative;display:grid;width:6.6em;height:1.3em;overflow:visible;text-decoration:none;font-size:24px;line-height:1.3">
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'DM Sans',sans-serif;font-weight:500;font-style:normal;letter-spacing:.005em;font-size:1em;animation:{{ wmW1 }} 20s linear infinite"><span style="color:#1b7f9c">we</span><span style="color:#7a5a99">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#c9a227">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Newsreader',serif;font-weight:500;font-style:italic;letter-spacing:0;font-size:1em;animation:{{ wmW2 }} 20s linear infinite"><span style="color:#7a5a99">we</span><span style="color:#c9a227">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#1b7f9c">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Cormorant Garamond',serif;font-weight:600;font-style:normal;letter-spacing:.02em;font-size:1em;animation:{{ wmW3 }} 20s linear infinite"><span style="color:#c9a227">we</span><span style="color:#1b7f9c">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#7a5a99">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Josefin Sans',sans-serif;font-weight:400;font-style:normal;letter-spacing:.05em;font-size:1em;animation:{{ wmW4 }} 20s linear infinite"><span style="color:#1b7f9c">we</span><span style="color:#c9a227">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#7a5a99">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;letter-spacing:.01em;font-size:1em;animation:{{ wmW5 }} 20s linear infinite"><span style="color:#7a5a99">we</span><span style="color:#1b7f9c">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#c9a227">World</span></span>
+    <span style="position:absolute;top:-.1em;bottom:-.1em;left:-6%;width:.5em;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(232,208,120,.55),rgba(255,255,255,.9),rgba(201,169,224,.5),transparent);filter:blur(2px);animation:wmSand 20s linear infinite"></span>
+    <span style="position:absolute;right:.1em;top:-.3em;font-size:.36em;line-height:1;color:#e8d078;text-shadow:0 0 8px rgba(232,208,120,.9);pointer-events:none;animation:wmStar 6s ease-in-out infinite 1s">✦</span>
+  </a>
+  <nav style="display:flex;align-items:center;gap:clamp(18px,3vw,40px);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">
+    <a href="Home.dc.html" style="color:#0b1220;padding-bottom:2px;border-bottom:1.5px solid {{ homeLine }}">Home</a>
+    <a href="About.dc.html" style="color:#0b1220;padding-bottom:2px;border-bottom:1.5px solid {{ aboutLine }}">About</a>
+    <a href="Features.dc.html" style="color:#0b1220;padding-bottom:2px;border-bottom:1.5px solid {{ featuresLine }}">Features</a>
+    <a href="Contact.dc.html" style="color:#0b1220;padding-bottom:2px;border-bottom:1.5px solid {{ contactLine }}">Contact</a>
+    <a href="https://weyoux.com" style="color:#0b1220;border:1.5px solid #c9a227;border-radius:20px;padding:7px 16px;transition:background .3s,color .3s" style-hover="background:#c9a227;color:#040c16">enVoy</a>
+    <a href="Contact.dc.html" style="color:#040c16;font-weight:700;letter-spacing:.08em;border-radius:20px;padding:9px 20px;background:linear-gradient(135deg,#f6ebb8 0%,#e8d078 35%,#c9a227 70%,#e2c65a 100%);background-size:200% auto;animation:shine 5s linear infinite;box-shadow:0 10px 30px rgba(201,162,39,.45),0 2px 6px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.5)">Inquiries</a>
+  </nav>
+</header>
+<div data-desk="1" style="position:fixed;right:18px;top:50vh;transform:translateY(-50%);z-index:120;display:flex;flex-direction:column;gap:14px;font-family:'DM Sans',sans-serif">
+  <a href="https://wa.me/919036992826" aria-label="WhatsApp" style="width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(232,208,120,.18);border:1px solid rgba(201,162,39,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#a8841f;font-size:11px;font-weight:700;letter-spacing:.06em;animation:breathe 7s ease-in-out infinite">WA</a>
+  <a href="mailto:info@weyoux.com" aria-label="Email" style="width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(232,208,120,.18);border:1px solid rgba(201,162,39,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#a8841f;font-size:13px;font-weight:700;animation:breathe 7s ease-in-out infinite 3.5s">@</a>
+</div>
+
+
+<header data-mob="1" style="position:fixed;top:0;left:0;right:0;z-index:100;height:60px;display:none;align-items:center;justify-content:space-between;gap:8px;padding:0 12px 0 14px;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(11,18,32,0.08);font-family:'DM Sans',sans-serif">
+  <a href="Home.dc.html" aria-label="weYou World home" style="position:relative;display:grid;width:6.6em;height:1.3em;overflow:visible;text-decoration:none;font-size:20px;line-height:1.3">
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'DM Sans',sans-serif;font-weight:500;font-style:normal;letter-spacing:.005em;font-size:1em;animation:{{ wmW1 }} 20s linear infinite"><span style="color:#1b7f9c">we</span><span style="color:#7a5a99">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#c9a227">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Newsreader',serif;font-weight:500;font-style:italic;letter-spacing:0;font-size:1em;animation:{{ wmW2 }} 20s linear infinite"><span style="color:#7a5a99">we</span><span style="color:#c9a227">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#1b7f9c">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Cormorant Garamond',serif;font-weight:600;font-style:normal;letter-spacing:.02em;font-size:1em;animation:{{ wmW3 }} 20s linear infinite"><span style="color:#c9a227">we</span><span style="color:#1b7f9c">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#7a5a99">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Josefin Sans',sans-serif;font-weight:400;font-style:normal;letter-spacing:.05em;font-size:1em;animation:{{ wmW4 }} 20s linear infinite"><span style="color:#1b7f9c">we</span><span style="color:#c9a227">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#7a5a99">World</span></span>
+    <span style="grid-area:1/1;display:flex;align-items:center;white-space:nowrap;font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;letter-spacing:.01em;font-size:1em;animation:{{ wmW5 }} 20s linear infinite"><span style="color:#7a5a99">we</span><span style="color:#1b7f9c">You</span><sup style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:.34em;font-weight:500;line-height:1;color:#7a8294;align-self:flex-start;margin:.12em 0 0 .06em">™</sup><span style="margin-left:.28em;color:#c9a227">World</span></span>
+    <span style="position:absolute;top:-.1em;bottom:-.1em;left:-6%;width:.5em;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(232,208,120,.55),rgba(255,255,255,.9),rgba(201,169,224,.5),transparent);filter:blur(2px);animation:wmSand 20s linear infinite"></span>
+    <span style="position:absolute;right:.1em;top:-.3em;font-size:.36em;line-height:1;color:#e8d078;text-shadow:0 0 8px rgba(232,208,120,.9);pointer-events:none;animation:wmStar 6s ease-in-out infinite 1s">✦</span>
+  </a>
+  <div style="display:flex;align-items:center;gap:12px">
+    <a href="Contact.dc.html" style="color:#040c16;font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border-radius:18px;padding:9px 14px;background:linear-gradient(135deg,#e8d078,#c9a227);box-shadow:0 6px 18px rgba(201,162,39,.3),inset 0 1px 0 rgba(255,255,255,.5)">Inquiries</a>
+    <button aria-label="Menu" onClick="{{ toggle }}" style="width:44px;height:44px;border:0;background:transparent;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:7px;cursor:pointer;padding:0"><span style="display:block;width:28px;height:2px;background:#0b1220"></span><span style="display:block;width:28px;height:2px;background:#0b1220"></span><span style="display:block;width:28px;height:2px;background:#0b1220"></span></button>
+  </div>
+</header>
+<sc-if value="{{ open }}" hint-placeholder-val="{{ false }}">
+<div style="position:fixed;top:0;left:0;right:0;height:100vh;z-index:200;background:#fff;display:flex;flex-direction:column;padding:16px;animation:menuIn .3s ease both;font-family:'DM Sans',sans-serif">
+  <div style="display:flex;justify-content:flex-end"><button aria-label="Close menu" onClick="{{ toggle }}" style="width:44px;height:44px;border:0;background:transparent;font-size:26px;color:#0b1220;cursor:pointer">×</button></div>
+  <nav style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;font-family:'Newsreader',serif;font-weight:300;font-size:28px">
+    <a href="Home.dc.html" style="color:#0b1220">Home</a>
+    <a href="About.dc.html" style="color:#0b1220">About</a>
+    <a href="Features.dc.html" style="color:#0b1220">Features</a>
+    <a href="Contact.dc.html" style="color:#0b1220">Contact</a>
+    <a href="https://weyoux.com" style="color:#0b1220;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid #c9a227;border-radius:20px;padding:10px 22px;margin-top:10px">enVoy</a>
+  </nav>
+</div>
+</sc-if>
+<div data-mob="1" style="position:fixed;right:12px;bottom:18px;z-index:120;display:none;flex-direction:column;gap:10px;font-family:'DM Sans',sans-serif">
+  <a href="https://wa.me/919036992826" aria-label="WhatsApp" style="width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(232,208,120,.22);border:1px solid rgba(201,162,39,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#a8841f;font-size:10px;font-weight:700;letter-spacing:.06em;animation:breathe 7s ease-in-out infinite">WA</a>
+  <a href="mailto:info@weyoux.com" aria-label="Email" style="width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(232,208,120,.22);border:1px solid rgba(201,162,39,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#a8841f;font-size:12px;font-weight:700;animation:breathe 7s ease-in-out infinite 3.5s">@</a>
+</div>
+
+
+<section onMouseMove="{{ heroMove }}" onTouchMove="{{ heroTouch }}" onMouseLeave="{{ heroLeave }}" style="position:relative;overflow:hidden;min-height:min(78vh,720px);display:flex;align-items:center;justify-content:center;text-align:center;padding:clamp(96px,11vw,120px) clamp(16px,4cqw,40px) clamp(56px,8vw,96px);background:linear-gradient(162deg,#ffffff 0%,#f7f9fc 20%,#e8ecf3 40%,#ffffff 55%,#eef1f7 75%,#fdfdfe 100%)">
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,rgba(255,255,255,0) 30%,rgba(255,255,255,.95) 46%,rgba(226,232,242,.8) 52%,rgba(255,255,255,.95) 58%,rgba(255,255,255,0) 74%);background-size:260% 100%;animation:wave 18s ease-in-out infinite;opacity:1"></div>
+  <div style="position:absolute;inset:-20%;pointer-events:none;background:radial-gradient(ellipse 40% 35% at 30% 40%,rgba(27,127,156,.13),transparent 70%);filter:blur(34px);animation:aurora 30s ease-in-out infinite"></div>
+  <div style="position:absolute;inset:-20%;pointer-events:none;background:radial-gradient(ellipse 38% 34% at 72% 46%,rgba(139,108,166,.16),transparent 70%);filter:blur(40px);animation:aurora2 34s ease-in-out infinite"></div>
+  <div style="position:absolute;inset:-20%;pointer-events:none;background:radial-gradient(ellipse 30% 26% at 52% 72%,rgba(201,162,39,.12),transparent 70%);filter:blur(40px);animation:aurora 38s ease-in-out infinite reverse"></div>
+  <canvas ref="{{ canvasRef }}" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none"></canvas>
+  <sc-for list="{{ sparkles }}" as="k" hint-placeholder-count="0">
+    <span style="position:absolute;left:{{ k.x }}%;top:{{ k.y }}%;font-size:{{ k.s }}px;line-height:1;color:{{ k.c }};pointer-events:none;text-shadow:0 0 12px currentColor;animation:twinkle {{ k.d }}s ease-in-out infinite;animation-delay:{{ k.o }}s">✦</span>
+  </sc-for>
+  <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 60% at 50% 45%,rgba(255,255,255,.85),rgba(255,255,255,0) 70%),radial-gradient(ellipse 120% 90% at 50% 50%,transparent 55%,rgba(10,25,49,.09) 100%)"></div>
+  <div ref="{{ plateRef }}" style="position:absolute;inset:0;pointer-events:none;perspective:1400px;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.16,1,.3,1)">
+    <div style="position:absolute;left:-20%;top:18%;width:140%;height:clamp(90px,16cqw,220px);border-radius:50%;transform:rotate(-14deg) translateZ(-260px);background:linear-gradient(90deg,transparent 0%,rgba(27,127,156,.22) 30%,rgba(255,255,255,.6) 50%,rgba(122,90,153,.22) 70%,transparent 100%);filter:blur(22px);animation:floatY 18s ease-in-out infinite"></div>
+    <div style="position:absolute;left:-15%;top:46%;width:130%;height:clamp(70px,12cqw,170px);border-radius:50%;transform:rotate(9deg) translateZ(-120px);background:linear-gradient(90deg,transparent 0%,rgba(201,162,39,.2) 28%,rgba(255,255,255,.7) 50%,rgba(201,162,39,.18) 72%,transparent 100%);filter:blur(18px);animation:floatY 22s ease-in-out infinite 4s"></div>
+    <div style="position:absolute;left:-25%;top:66%;width:150%;height:clamp(80px,14cqw,200px);border-radius:50%;transform:rotate(-6deg) translateZ(-40px);background:linear-gradient(90deg,transparent 0%,rgba(122,90,153,.2) 32%,rgba(255,255,255,.55) 50%,rgba(27,127,156,.18) 68%,transparent 100%);filter:blur(24px);animation:floatY 26s ease-in-out infinite 9s"></div>
+  </div>
+  <div ref="{{ heroRef }}" style="position:relative;z-index:2;max-width:920px;display:flex;flex-direction:column;align-items:center;gap:26px;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.16,1,.3,1);will-change:transform">
+    <span style="display:flex;align-items:center;gap:12px;font-size:11.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:#1b7f9c;opacity:0;animation:heroIn 1s cubic-bezier(.16,1,.3,1) .1s forwards"><span style="display:block;width:40px;height:1px;background:linear-gradient(90deg,transparent,#1b7f9c)"></span>Inquiries<span style="display:block;width:40px;height:1px;background:linear-gradient(90deg,#1b7f9c,transparent)"></span></span>
+        <svg viewBox="0 0 760 120" style="width:min(88%,760px);height:auto;overflow:visible;margin-bottom:-38px;opacity:0;animation:heroIn 1s cubic-bezier(.16,1,.3,1) .15s forwards" aria-hidden="true"><defs><linearGradient id="archC" x1="0" x2="1"><stop offset="0" stop-color="#c9a227" stop-opacity="0"></stop><stop offset=".3" stop-color="#a8841f"></stop><stop offset=".5" stop-color="#e8d078"></stop><stop offset=".7" stop-color="#a8841f"></stop><stop offset="1" stop-color="#c9a227" stop-opacity="0"></stop></linearGradient></defs><path d="M10 118 C 120 8, 640 8, 750 118" fill="none" stroke="url(#archC)" stroke-width="1" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;animation:arch 2.6s cubic-bezier(.16,1,.3,1) .4s forwards"></path><circle cx="380" cy="12" r="2.2" fill="#e8d078" style="filter:drop-shadow(0 0 6px #e8d078);opacity:0;animation:heroIn .8s ease 2.6s forwards"></circle></svg>
+    <h1 style="margin:0;font-family:'Newsreader',serif;font-weight:300;font-size:clamp(34px,4.8cqw,60px);line-height:1.08;letter-spacing:-.024em;color:#0b1220;text-wrap:balance;perspective:700px;filter:drop-shadow(0 1px 0 #fff) drop-shadow(0 3px 8px rgba(10,25,49,.14)) drop-shadow(0 16px 36px rgba(10,25,49,.12))">{{ heroTitle }}</h1>
+    <div style="display:flex;align-items:center;gap:10px;opacity:0;animation:heroIn 1s cubic-bezier(.16,1,.3,1) 1.5s forwards"><span style="display:block;width:56px;height:1px;background:linear-gradient(90deg,transparent,#a8841f)"></span><span style="font-size:9px;color:#a8841f">✦</span><span style="display:block;width:56px;height:1px;background:linear-gradient(90deg,#a8841f,transparent)"></span></div>
+    <p style="margin:0;max-width:600px;font-weight:300;font-size:clamp(16px,1.35cqw,17.5px);line-height:1.85;color:#3f475a;opacity:0;animation:heroIn 1s cubic-bezier(.16,1,.3,1) 1.7s forwards">Every project begins with one discovery call. We reply within one working day.</p>
+      </div>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:40vh;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,0),#fff)"></div>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(11,18,32,.08),transparent)"></div>
+</section>
+
+<section style="background:#fff;padding:0 clamp(16px,4cqw,40px) clamp(56px,8cqw,104px)">
+  <div style="max-width:1120px;margin:0 auto;position:relative;overflow:hidden;border-radius:clamp(20px,3cqw,30px);padding:clamp(24px,5cqw,72px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(28px,5cqw,72px);align-items:start;background:linear-gradient(135deg,#fff 0%,#fbfcfe 22%,#e6eaf1 38%,#ffffff 50%,#e9edf4 62%,#fbfcfe 78%,#fff 100%);background-size:220% 220%;animation:wave 22s ease-in-out infinite;box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 rgba(10,25,49,.06),0 2px 4px rgba(10,25,49,.06),0 10px 22px rgba(10,25,49,.10),0 28px 56px rgba(10,25,49,.14),0 60px 110px rgba(10,25,49,.14),0 0 0 1px rgba(10,25,49,.06)">
+    <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 34%,rgba(255,255,255,.55) 46%,#fff 50%,rgba(255,255,255,.55) 54%,transparent 66%);animation:sheen 9s linear infinite"></div>
+    <div style="position:relative;display:flex;flex-direction:column;gap:22px;text-align:{{ ta }};align-items:{{ ai }};animation:rise 1s cubic-bezier(.16,1,.3,1) both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <span style="font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#1b7f9c">Let’s build together</span>
+      <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(28px,3cqw,38px);line-height:1.15;letter-spacing:-.018em;text-wrap:balance">Write, call or message — the thread stays with us.</h3>
+      <p style="margin:0;font-size:clamp(16px,1.3cqw,18px);line-height:1.65;color:#3f475a;text-wrap:pretty">The call covers your channels, your hours and where <em style="color:#a8841f">enVoy</em> should step in first.</p>
+      <div style="width:100%;max-width:440px;display:flex;flex-direction:column;margin-top:14px;align-items:stretch"><div style="width:100%;display:flex;flex-direction:column;gap:5px;padding:16px 0;border-top:1px solid rgba(11,18,32,0.08);text-align:{{ ta }};align-items:{{ ai }}"><span style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1b7f9c">Email</span><a href="mailto:info@weyoux.com" style="font-family:'Newsreader',serif;font-size:clamp(19px,1.8cqw,24px);line-height:1.2;color:#0b1220;transition:color .3s" style-hover="color:#a8841f">info@weyoux.com</a></div><div style="width:100%;display:flex;flex-direction:column;gap:5px;padding:16px 0;border-top:1px solid rgba(11,18,32,0.08);text-align:{{ ta }};align-items:{{ ai }}"><span style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1b7f9c">WhatsApp</span><a href="https://wa.me/919036992826" style="font-family:'Newsreader',serif;font-size:clamp(19px,1.8cqw,24px);line-height:1.2;color:#0b1220;transition:color .3s" style-hover="color:#a8841f">+91 90369 92826</a></div><div style="width:100%;display:flex;flex-direction:column;gap:5px;padding:16px 0;border-top:1px solid rgba(11,18,32,0.08);text-align:{{ ta }};align-items:{{ ai }}"><span style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1b7f9c">Studio</span><span style="font-family:'Newsreader',serif;font-size:clamp(19px,1.8cqw,24px);line-height:1.2;color:#0b1220">Bangalore — clients worldwide</span></div></div>
+    </div>
+    <div style="position:relative;animation:rise 1s cubic-bezier(.16,1,.3,1) .1s both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+      <form onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:18px;border-radius:clamp(16px,2.5cqw,22px);padding:clamp(18px,3cqw,32px);background:#fff;box-shadow:inset 0 1px 0 #fff,0 2px 4px rgba(10,25,49,.06),0 10px 22px rgba(10,25,49,.08),0 0 0 1px rgba(10,25,49,.06)">
+        <div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Newsreader',serif;font-size:24px;line-height:1.3">Tell us about your project</span><span style="font-size:13.5px;color:#7a8294">We reply with a short strategy brief.</span></div>
+        <label style="display:flex;flex-direction:column;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1b7f9c">Name<input name="Name" required style="height:48px;padding:0 16px;border-radius:12px;border:1px solid rgba(11,18,32,0.12);background:#fff;font-size:15px;color:#0b1220;outline:none;letter-spacing:0;text-transform:none;font-weight:400" style-focus="border-color:#7a5a99;box-shadow:0 0 0 3px rgba(122,90,153,.15)"></label>
+        <label style="display:flex;flex-direction:column;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1b7f9c">Email<input name="Email" type="email" required style="height:48px;padding:0 16px;border-radius:12px;border:1px solid rgba(11,18,32,0.12);background:#fff;font-size:15px;color:#0b1220;outline:none;letter-spacing:0;text-transform:none;font-weight:400" style-focus="border-color:#7a5a99;box-shadow:0 0 0 3px rgba(122,90,153,.15)"></label>
+        <label style="display:flex;flex-direction:column;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1b7f9c">Company<input name="Company" style="height:48px;padding:0 16px;border-radius:12px;border:1px solid rgba(11,18,32,0.12);background:#fff;font-size:15px;color:#0b1220;outline:none;letter-spacing:0;text-transform:none;font-weight:400" style-focus="border-color:#7a5a99;box-shadow:0 0 0 3px rgba(122,90,153,.15)"></label>
+        <label style="display:flex;flex-direction:column;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1b7f9c">Tell us more<textarea name="Message" rows="4" style="padding:14px 16px;border-radius:12px;border:1px solid rgba(11,18,32,0.12);background:#fff;font-size:15px;color:#0b1220;outline:none;resize:vertical;letter-spacing:0;text-transform:none;font-weight:400;line-height:1.5" style-focus="border-color:#7a5a99;box-shadow:0 0 0 3px rgba(122,90,153,.15)"></textarea></label>
+        <button type="submit" style="position:relative;overflow:hidden;border:0;cursor:pointer;min-height:48px;padding:14px 34px;border-radius:24px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#040c16;background:linear-gradient(135deg,#f6ebb8 0%,#e8d078 35%,#c9a227 70%,#e2c65a 100%);background-size:200% auto;animation:shine 5s linear infinite;box-shadow:0 10px 30px rgba(201,162,39,.45),0 2px 6px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.5)"><span style="position:absolute;top:0;bottom:0;left:0;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);animation:sparkle 5s ease-in-out infinite"></span><span style="position:relative">Send discovery request</span></button>
+        <span style="font-size:12px;color:#7a8294;text-align:center">We never share your details.</span>
+      </form>
+      </sc-if>
+      <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;min-height:420px;border-radius:22px;padding:32px;background:#fff;box-shadow:inset 0 1px 0 #fff,0 2px 4px rgba(10,25,49,.06),0 10px 22px rgba(10,25,49,.08),0 0 0 1px rgba(10,25,49,.06)">
+        <span style="font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1b7f9c">Received</span>
+        <span style="font-family:'Newsreader',serif;font-size:28px;line-height:1.3;text-wrap:balance">Thank you. We reply within one working day.</span>
+      </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<footer data-center="1" style="background:#040c16;color:rgba(255,255,255,.4);padding:40px clamp(16px,4vw,40px);font-size:12px;font-family:'DM Sans',sans-serif;text-align:{{ ta }};padding:40px clamp(16px,4vw,40px)">
+  <div data-center="1" style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:{{ jc }};align-items:{{ ai }};gap:28px">
+    <div data-center="1" style="display:flex;flex-direction:column;align-items:{{ ai }};gap:12px">
+      <span style="position:relative;display:inline-flex;align-items:flex-start;font-weight:500;font-size:20px;letter-spacing:.01em;animation:wmBob 6s ease-in-out infinite"><span style="display:inline-block;color:#7fd4e8;animation:{{ wmA }} 18s ease-in-out infinite">we</span><span style="display:inline-block;color:#c9a9e0;animation:{{ wmB }} 18s ease-in-out infinite -12s">You</span><sup style="font-size:.34em;line-height:1;margin-left:.06em;color:rgba(255,255,255,.45);align-self:flex-start;position:relative;top:.25em">™</sup><span style="display:inline-block;margin-left:.2em;color:#e8d078;animation:{{ wmC }} 18s ease-in-out infinite -6s">World</span><span style="position:absolute;right:1.55em;top:-.42em;font-size:.38em;line-height:1;color:#e8d078;text-shadow:0 0 8px rgba(232,208,120,.9);pointer-events:none;animation:wmStar 5s ease-in-out infinite 1s">✦</span></span>
+      <span style="color:#e8d078;max-width:320px;line-height:1.6">AI-powered websites and conversations. A division of weYou X — a fully AI entity.</span>
+    </div>
+    <div data-center="1" style="display:flex;flex-wrap:wrap;justify-content:{{ jc }};gap:40px">
+      <div data-center="1" style="display:flex;flex-direction:column;gap:8px;align-items:{{ ai }}"><span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#e8d078;margin-bottom:4px">Pages</span><a href="Home.dc.html" style="color:rgba(255,255,255,.4)">Home</a><a href="About.dc.html" style="color:rgba(255,255,255,.4)">About</a><a href="Features.dc.html" style="color:rgba(255,255,255,.4)">Features</a><a href="Contact.dc.html" style="color:rgba(255,255,255,.4)">Contact</a></div>
+      <div data-center="1" style="display:flex;flex-direction:column;gap:8px;align-items:{{ ai }}"><span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#e8d078;margin-bottom:4px">Company</span><a href="mailto:info@weyoux.com" style="color:rgba(255,255,255,.4)">info@weyoux.com</a><a href="https://weyoux.com" style="color:rgba(255,255,255,.4)">weYou X</a><a href="https://legalindia.ai" style="color:rgba(255,255,255,.4)">LegalIndia.ai</a></div>
+    </div>
+  </div>
+  <div data-center="1" data-stack="1" style="max-width:1100px;margin:28px auto 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);display:flex;flex-wrap:wrap;justify-content:{{ jc }};align-items:center;flex-direction:{{ fd }};gap:12px;font-size:11px">
+    <span>Bangalore · © 2026 weYou World — a division of weYou X</span>
+    <div style="display:flex;gap:16px"><a href="#" style="color:rgba(255,255,255,.4)">Privacy</a><a href="#" style="color:rgba(255,255,255,.4)">Terms</a></div>
+  </div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;mobile&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;,&quot;description&quot;:&quot;Force mobile layout (auto below 900px)&quot;},&quot;wordmark&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;brand&quot;,&quot;options&quot;:[&quot;brand&quot;,&quot;spectrum&quot;,&quot;static&quot;],&quot;tsType&quot;:&quot;'brand'|'spectrum'|'static'&quot;,&quot;section&quot;:&quot;Header&quot;}}">
+class Component extends DCLogic {
+  canvasRef = React.createRef(); heroRef = React.createRef(); plateRef = React.createRef();
+  state = { narrow: (typeof matchMedia !== 'undefined' && (matchMedia('(max-width: 899px)').matches || document.documentElement.clientWidth < 900)), wide: false, sent: false , open: false };
+  rootRef = React.createRef();
+  mouse = { x: 0, y: 0 };
+  componentDidMount() {
+    const check = () => { const cw = this.rootRef && this.rootRef.current ? this.rootRef.current.clientWidth : document.documentElement.clientWidth; const n = matchMedia('(max-width: 899px)').matches || cw < 900, wd = cw >= 1200; if (n !== this.state.narrow || wd !== this.state.wide) this.setState({ narrow: n, wide: wd }); };
+    check(); addEventListener('resize', check); const mq = matchMedia('(max-width: 899px)'); mq.addEventListener && mq.addEventListener('change', check); setTimeout(check, 50); setTimeout(check, 400); if ('ResizeObserver' in window) { this._rootRO = new ResizeObserver(check); const tryObs = () => { if (this.rootRef && this.rootRef.current) this._rootRO.observe(this.rootRef.current); else setTimeout(tryObs, 100); }; tryObs(); }
+    this._off = () => { removeEventListener('resize', check); this._rootRO && this._rootRO.disconnect(); };
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // starfield: 3 depth layers, parallax, twinkle, threads, shooting stars
+    const c = this.canvasRef.current; if (!c) return;
+    const ctx = c.getContext('2d'); const mobile = innerWidth < 700; const dpr = Math.min(devicePixelRatio || 1, 1.5);
+    const cols = ['11,18,32', '27,127,156', '122,90,153', '168,132,31'];
+    let stars = [], shots = [], bokeh = [], dust = [], comet = null, nextComet = 3, w = 0, h = 0, run = true, t = 0;
+    this._emit = (x, y, n, sp) => { for (let i = 0; i < n; i++) { const a = Math.random() * 6.283, v = (sp || 1) * (.4 + Math.random() * 1.4); dust.push({ x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - .3, life: 1, r: 1.5 + Math.random() * 2.5, rot: Math.random() * 3, c: ['201,162,39', '27,127,156', '122,90,153', '232,208,120'][Math.floor(Math.random() * 4)] }); } if (dust.length > 400) dust.splice(0, dust.length - 400); };
+    const size = () => { w = c.clientWidth; h = c.clientHeight; c.width = w * dpr; c.height = h * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      bokeh = Array.from({ length: mobile ? 7 : 14 }, (_, i) => ({ x: Math.random() * w, y: Math.random() * h, r: 40 + Math.random() * 110, z: .2 + Math.random() * .8, vx: (Math.random() - .5) * .12, vy: (Math.random() - .5) * .08, c: ['27,127,156', '122,90,153', '201,162,39'][i % 3] }));
+      const N = mobile ? 120 : 170; stars = Array.from({ length: N }, (_, i) => ({ x: Math.random() * w, y: Math.random() * h, z: .3 + Math.random() * .7, r: .5 + Math.random() * 1.4, ph: Math.random() * 6.28, sp: .4 + Math.random() * 1.2, c: cols[i % 4], vx: (Math.random() - .5) * .1, vy: (Math.random() - .5) * .1 })); };
+    size(); const ro = new ResizeObserver(() => { check(); if (c.clientWidth !== w || c.clientHeight !== h) size(); }); ro.observe(c);
+    const draw = () => { if (!run) return; if (w === 0 && c.clientWidth > 0) size();
+      if (document.hidden || c.getBoundingClientRect().bottom < 0) { requestAnimationFrame(draw); return; }
+      t += .016; ctx.clearRect(0, 0, w, h);
+      const px = this.mouse.x * 28, py = this.mouse.y * 18;
+      for (const b of bokeh) { b.x += b.vx; b.y += b.vy; if (b.x < -150) b.x = w + 150; if (b.x > w + 150) b.x = -150; if (b.y < -150) b.y = h + 150; if (b.y > h + 150) b.y = -150;
+        const g = ctx.createRadialGradient(b.x + px * b.z * 1.6, b.y + py * b.z * 1.6, 0, b.x + px * b.z * 1.6, b.y + py * b.z * 1.6, b.r); g.addColorStop(0, `rgba(${b.c},${.07 * b.z})`); g.addColorStop(1, `rgba(${b.c},0)`); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(b.x + px * b.z * 1.6, b.y + py * b.z * 1.6, b.r, 0, 7); ctx.fill(); }
+      const near = [];
+      for (const s of stars) { s.x += s.vx * s.z; s.y += s.vy * s.z; if (s.x < 0) s.x = w; if (s.x > w) s.x = 0; if (s.y < 0) s.y = h; if (s.y > h) s.y = 0;
+        const x = s.x + px * s.z, y = s.y + py * s.z, tw = .45 + .55 * Math.sin(t * s.sp + s.ph);
+        ctx.fillStyle = `rgba(${s.c},${(.15 + .45 * tw) * s.z})`; ctx.beginPath(); ctx.arc(x, y, s.r * s.z * (0.8 + .4 * tw), 0, 7); ctx.fill();
+        if (s.r > 1.5 && tw > .85) { ctx.strokeStyle = `rgba(${s.c},${(tw - .85) * 3})`; ctx.lineWidth = .6; ctx.beginPath(); ctx.moveTo(x - 6, y); ctx.lineTo(x + 6, y); ctx.moveTo(x, y - 6); ctx.lineTo(x, y + 6); ctx.stroke(); }
+        if (s.z > .75) near.push({ x, y, c: s.c }); }
+      ctx.lineWidth = .5;
+      for (let i = 0; i < near.length; i++) for (let j = i + 1; j < near.length; j++) { const a = near[i], b = near[j], d = Math.hypot(a.x - b.x, a.y - b.y);
+        if (d < 130) { ctx.strokeStyle = `rgba(${a.c},${(1 - d / 130) * .16})`; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); } }
+      // comet — Tinker Bell swoop
+      if (!comet && t > nextComet) { const fromLeft = Math.random() < .5; comet = { p: 0, x0: fromLeft ? -40 : w + 40, x1: fromLeft ? w + 40 : -40, y0: h * (.15 + Math.random() * .25), cy: h * (.55 + Math.random() * .25), y1: h * (.1 + Math.random() * .3), dur: 2.6 + Math.random() * .8 }; }
+      if (comet) { comet.p += .016 / comet.dur; const p = comet.p, q = 1 - p; const x = q * q * comet.x0 + 2 * q * p * (w / 2) + p * p * comet.x1, y = q * q * comet.y0 + 2 * q * p * comet.cy + p * p * comet.y1;
+        const g = ctx.createRadialGradient(x, y, 0, x, y, 26); g.addColorStop(0, 'rgba(255,255,255,.95)'); g.addColorStop(.25, 'rgba(232,208,120,.7)'); g.addColorStop(1, 'rgba(232,208,120,0)'); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, 26, 0, 7); ctx.fill();
+        this._emit(x, y, 3, .8); if (p >= 1) { comet = null; nextComet = t + 9 + Math.random() * 6; } }
+      // pixie dust
+      dust = dust.filter(d => d.life > 0);
+      for (const d of dust) { d.x += d.vx; d.y += d.vy; d.vy += .025; d.vx *= .985; d.life -= .018; d.rot += .05; const a = d.life * d.life, r = d.r * (0.4 + d.life);
+        ctx.save(); ctx.translate(d.x, d.y); ctx.rotate(d.rot); ctx.fillStyle = `rgba(${d.c},${a})`; ctx.shadowColor = `rgba(${d.c},${a})`; ctx.shadowBlur = 6;
+        ctx.beginPath(); for (let k = 0; k < 8; k++) { const ang = k * Math.PI / 4, rr = k % 2 ? r * .35 : r; ctx.lineTo(Math.cos(ang) * rr, Math.sin(ang) * rr); } ctx.closePath(); ctx.fill(); ctx.restore(); }
+      requestAnimationFrame(draw); };
+    if (!reduce) draw(); else { t = 1; }
+    this._stop = () => { run = false; ro.disconnect(); };
+  }
+  componentWillUnmount() { this._off && this._off(); this._stop && this._stop(); }
+  heroTitle() {
+    if (this._hero) return this._hero;
+    const gold = { backgroundImage: 'linear-gradient(90deg,#a8841f,#f6ebb8,#c9a227,#e8d078,#a8841f)', backgroundSize: '300% auto', WebkitBackgroundClip: 'text', backgroundClip: 'text', WebkitTextFillColor: 'transparent', padding: '.12em .08em', margin: '-.12em -.08em', animation: 'charIn .9s cubic-bezier(.16,1,.3,1) both, shine 7s linear infinite 1.2s' };
+    const teal = { ...gold, backgroundImage: 'linear-gradient(90deg,#1b7f9c,#8fe0f2,#7a5a99,#c9a9e0,#1b7f9c)' };
+    const lines = [[['Tell us about the ', { color: '#0b1220' }], ['business,', gold, 400]], [['and we will map the ', { color: '#7a8294' }], ['conversation.', teal, 400]]];
+    let i = 0; const kids = [];
+    lines.forEach((line, li) => { line.forEach(([txt, st, fw]) => { for (const word of txt.split(/(\s+)/)) { if (!word) continue; if (/^\s+$/.test(word)) { kids.push(React.createElement('span', { key: 'sp' + (i++), style: { whiteSpace: 'pre' } }, ' ')); continue; } const k = i++;
+      kids.push(React.createElement('span', { key: k, style: { display: 'inline-block', whiteSpace: 'nowrap', fontWeight: fw || 300, fontStyle: fw ? 'italic' : 'normal', transformOrigin: '50% 100%', animation: 'charIn .9s cubic-bezier(.16,1,.3,1) both', animationDelay: `${.25 + k * .12}s`, ...st, ...(st.animation ? { animation: st.animation, animationDelay: `${.25 + k * .12}s, 1.2s` } : {}) } }, word)); } });
+      if (li < lines.length - 1) kids.push(React.createElement('br', { key: 'br' + li })); });
+    return (this._hero = React.createElement(React.Fragment, null, kids));
+  }
+  renderVals() {
+    const m = (this.props.mobile === true || this.state.narrow);
+    return {
+      // header
+      ...(() => { const mm = m, a = 'contact', mode = this.props.wordmark ?? 'brand'; const line = k => a === k ? '#c9a227' : 'transparent'; return {
+        notMobile: !mm, open: !!this.state.open, toggle: () => this.setState(s => ({ open: !s.open })),
+        wmW1: mode === 'static' ? 'wmNone' : 'wmWipe1', wmW2: mode === 'static' ? 'wmNone' : 'wmWipe2', wmW3: mode === 'static' ? 'wmNone' : 'wmWipe3', wmW4: mode === 'static' ? 'wmNone' : 'wmWipe4', wmW5: mode === 'static' ? 'wmNone' : 'wmWipe5',
+        homeLine: line('home'), aboutLine: line('about'), featuresLine: line('features'), contactLine: line('contact'),
+        ta: mm ? 'center' : 'left', jc: mm ? 'center' : 'space-between', ai: mm ? 'center' : 'flex-start', fd: mm ? 'column' : 'row',
+        wmA: mode === 'static' ? 'wmNone' : mode === 'spectrum' ? 'wmSpec' : 'wmCycle', wmB: mode === 'static' ? 'wmNone' : mode === 'spectrum' ? 'wmSpec' : 'wmCycle2', wmC: mode === 'static' ? 'wmNone' : mode === 'spectrum' ? 'wmSpec' : 'wmCycle3' }; })(), isMobile: m, wordmark: this.props.wordmark ?? 'brand', canvasRef: this.canvasRef, heroRef: this.heroRef, plateRef: this.plateRef, rootRef: this.rootRef, heroTitle: this.heroTitle(), ta: m ? 'center' : 'left', ai: m ? 'center' : 'flex-start',
+      heroMove: e => { const el = this.heroRef.current, r = e.currentTarget.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; this.mouse = { x, y }; const cv = this.canvasRef.current; if (cv && this._emit) { const cr = cv.getBoundingClientRect(); this._emit(e.clientX - cr.left, e.clientY - cr.top, 2, .6); } if (el && !m) el.style.transform = `perspective(1200px) rotateY(${x * 4}deg) rotateX(${-y * 3}deg)`; const pl = this.plateRef.current; if (pl && !m) pl.style.transform = `translate3d(${-x * 34}px,${-y * 22}px,0) rotateY(${-x * 3}deg)`; },
+      heroTouch: e => { const t = e.touches && e.touches[0]; if (!t) return; const cv = this.canvasRef.current; if (cv && this._emit) { const cr = cv.getBoundingClientRect(); this._emit(t.clientX - cr.left, t.clientY - cr.top, 2, .6); } const r = e.currentTarget.getBoundingClientRect(); this.mouse = { x: (t.clientX - r.left) / r.width - .5, y: (t.clientY - r.top) / r.height - .5 }; },
+      heroLeave: () => { this.mouse = { x: 0, y: 0 }; const el = this.heroRef.current; if (el) el.style.transform = ''; const pl = this.plateRef.current; if (pl) pl.style.transform = ''; },
+      sent: this.state.sent, notSent: !this.state.sent,
+      submit: e => { e.preventDefault(); const fd = new FormData(e.target); fd.append('_subject', 'Project Inquiry — weYou World'); fd.append('_captcha', 'false');
+        fetch('https://formsubmit.co/ajax/info@weyoux.com', { method: 'POST', body: fd }).catch(() => {}); this.setState({ sent: true }); } };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+# weYou World — full reference
+
+> weYou World builds AI-powered websites and digital platforms with deep integrations from day one. Division of weYou X (a fully AI entity), Bangalore, India; clients worldwide. Short version: https://weyouworld.com/llms.txt
+
+## Positioning
+Most websites are brochures with a contact form. A weYou World site arrives wired into the tools a business runs on and is optimised for Google and for the AI engines people now ask instead (ChatGPT, Perplexity, Gemini, AI Overviews). enVoy — our conversational AI — answers before anyone on the team opens a tab.
+
+## Capabilities
+1. **AI-native websites** — Next.js 15, edge rendering, Core Web Vitals 95+, design system, Stripe · Razorpay, HubSpot · Salesforce connected on the first commit.
+2. **Conversational AI (enVoy)** — trained on catalogue, pricing and past conversations; WhatsApp Business, voice/calls, web chat; 30+ languages; sub-second replies; hands to a human with the full thread.
+3. **Autonomous workflows** — quote → invoice, lead scoring and routing, follow-up cadences, approvals, audit log, one-click undo.
+4. **SEO + GEO** — schema/structured data, llms.txt, entity graph, E-E-A-T, programmatic pages, AI Overviews and Perplexity/ChatGPT citations.
+5. **Storefronts** — Shopify and headless commerce on the same AI core; UPI, cards, BNPL; abandoned-cart recovery; inventory-aware chat; returns automation.
+6. **Analytics** — GA4, Segment, attribution, conversation analytics, weekly AI digest, alerts.
+
+## Process
+- Discover — map the business (logic, journeys, integrations) before any code.
+- Architect — data flows, APIs and models chosen for scale (system design, UX, model choice).
+- Build & evolve — live demos every two weeks, then tuning from real usage (monitoring, fine-tuning).
+
+## Stack
+Search & AI discovery (schema, llms.txt, GEO) · Models (Claude, GPT, Gemini behind one gateway with routing, evals, fallbacks) · Payments (Stripe, Razorpay, UPI) · CRM (HubSpot, Salesforce) · Messaging (WhatsApp Business, voice, web chat via enVoy) · Infrastructure (Next.js on the edge, FastAPI, AWS, Cloudflare; observability; SOC 2 path).
+
+## Origin
+Founded on total synthesis — the "we" of our engineering binding with "You," the visionary business. weYou is the sum of an experience that continues: the architecture of everything wired — from deep logic to design. We started weYou World because businesses were made to choose between intelligent and beautiful; every site we build is both.
+
+## FAQ
+**Do you only work in India?** No — we are based in Bangalore and build for clients worldwide; payments, CRM and messaging stacks are chosen per market.
+**Do you rebuild or integrate?** Both: new sites at world standard, or deep AI wired into an existing site.
+**What is GEO?** Generative Engine Optimisation — structuring content and entities so AI answer engines cite your business as the answer.
+**How fast?** Discovery call within one working day; typical MVP in about 14 days; two-week sprints after.
+**How does enVoy relate?** enVoy is weYou X's conversational AI product; weYou World wires it into the sites and platforms it builds.
+
+## Brand voice
+Reality over show-off. Tell less, deliver more. Elegant restraint.
+
+## Contact
+Web https://weyouworld.com · Email info@weyoux.com · WhatsApp +91 90369 92826 · Parent https://weyoux.com · Bangalore, Karnataka, India — serving clients worldwide.
