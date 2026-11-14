@@ -28,7 +28,7 @@ async function loadPlaywright() {
   for (const t of tries) {
     try {
       const p = path.isAbsolute(t) ? t : req.resolve(t);
-      const m = await import(path.isAbsolute(t) ? pathToFileURL(req.resolve(t)).href : pathToFileURL(p).href);
+      const m = await import(pathToFileURL(p).href);
       return m.chromium ? m : m.default;
     } catch { /* next */ }
   }
@@ -66,13 +66,42 @@ function extractParts(src) {
 const BOOTSTRAP = name => `<script>
 /* Progressive enhancement: re-attach the interactive runtime. The static copy above is what crawlers and no-JS visitors read. */
 (function(){
-  function swap(){var r=document.getElementById('dc-root'),s=document.getElementById('prerender');if(r&&r.firstChild){if(s)s.remove();return true}return false}
-  fetch('/assets/dc/${name}.json').then(function(r){return r.json()}).then(function(p){
-    var x=document.createElement('x-dc');x.innerHTML=p.tpl;
-    var s=document.createElement('script');s.type='text/x-dc';s.setAttribute('data-dc-script','');s.setAttribute('data-props',p.props);s.textContent=p.js;
-    document.body.appendChild(x);document.body.appendChild(s);
-    var mo=new MutationObserver(function(){if(swap())mo.disconnect()});mo.observe(document.body,{childList:true,subtree:true});
-    var j=document.createElement('script');j.src='/support.js';document.body.appendChild(j);
+  function swap(){
+    var r = document.getElementById('dc-root'), s = document.getElementById('prerender');
+    if (r && r.firstChild) {
+      if (s) {
+        try {
+          var active = document.activeElement;
+          var focusedName = (active && s.contains(active)) ? active.name : null;
+          s.querySelectorAll('input[name], textarea[name], select[name]').forEach(function(inp){
+            if (inp.name && inp.value) {
+              var live = r.querySelector('[name="' + inp.name + '"]');
+              if (live) {
+                live.value = inp.value;
+                live.dispatchEvent(new Event('input', { bubbles: true }));
+                live.dispatchEvent(new Event('change', { bubbles: true }));
+              }
+            }
+          });
+          if (focusedName) {
+            var newFocus = r.querySelector('[name="' + focusedName + '"]');
+            if (newFocus) newFocus.focus();
+          }
+        } catch(e){}
+        s.remove();
+      }
+      document.querySelectorAll('x-dc').forEach(function(n){ n.remove(); });
+      return true;
+    }
+    return false;
+  }
+  fetch('/assets/dc/${name}.json').then(function(r){ return r.json(); }).then(function(p){
+    var x = document.createElement('x-dc'); x.style.display = 'none'; x.setAttribute('hidden', ''); x.innerHTML = p.tpl;
+    var s = document.createElement('script'); s.type = 'text/x-dc'; s.setAttribute('data-dc-script', ''); s.setAttribute('data-props', p.props); s.textContent = p.js;
+    document.body.appendChild(x); document.body.appendChild(s);
+    var mo = new MutationObserver(function(){ if (swap()) mo.disconnect(); });
+    mo.observe(document.body, { childList: true, subtree: true });
+    var j = document.createElement('script'); j.src = '/support.js'; document.body.appendChild(j);
   }).catch(function(){});
 })();
 </script>`;
@@ -105,7 +134,7 @@ async function main() {
         root.querySelectorAll('canvas').forEach(c => { c.removeAttribute('width'); c.removeAttribute('height'); });
         const head = document.head.cloneNode(true);
         head.querySelectorAll('script[src], script[data-dc-script]').forEach(n => n.remove());
-        head.querySelectorAll('style').forEach(s => { if (s.textContent.trim() === 'x-dc{display:none!important}') s.remove(); });
+        // keep the x-dc{display:none!important} rule: the raw template container must never be visible
         return { head: head.innerHTML, body: root.innerHTML };
       });
       if (errors.length) console.warn(`[${name}] console errors:\n  ` + errors.join('\n  '));

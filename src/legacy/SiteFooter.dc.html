@@ -20,20 +20,55 @@
 @keyframes shine{0%{background-position:200% center}100%{background-position:-200% center}}
 </style>
 </helmet>
-<footer style="background:#040c16;color:rgba(255,255,255,.4);padding:40px clamp(16px,4vw,40px);font-size:12px;font-family:'DM Sans',sans-serif;text-align:{{ ta }}">
-  <div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:{{ jc }};align-items:{{ ai }};gap:28px">
-    <div style="display:flex;flex-direction:column;align-items:{{ ai }};gap:12px">
-      <span style="position:relative;display:inline-flex;align-items:flex-start;font-weight:500;font-size:20px;letter-spacing:.01em;animation:wmBob 6s ease-in-out infinite"><span style="display:inline-block;color:#7fd4e8;animation:{{ wmA }} 18s ease-in-out infinite">we</span><span style="display:inline-block;color:#c9a9e0;animation:{{ wmB }} 18s ease-in-out infinite -12s">You</span><sup style="font-size:.34em;line-height:1;margin-left:.06em;color:rgba(255,255,255,.45);align-self:flex-start;position:relative;top:.25em">™</sup><span style="display:inline-block;margin-left:.2em;color:#e8d078;animation:{{ wmC }} 18s ease-in-out infinite -6s">World</span><span style="position:absolute;right:1.55em;top:-.42em;font-size:.38em;line-height:1;color:#e8d078;text-shadow:0 0 8px rgba(232,208,120,.9);pointer-events:none;animation:wmStar 5s ease-in-out infinite 1s">✦</span></span>
-      <span style="color:#e8d078;max-width:320px;line-height:1.6">AI-powered websites and conversations. A division of weYou X — a fully AI entity.</span>
+<footer style="background:#030712;color:#94a3b8;padding:clamp(56px,7vw,80px) clamp(16px,4vw,48px) 36px;font-size:13px;font-family:'DM Sans',sans-serif;border-top:1px solid rgba(255,255,255,.08)">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:clamp(28px,4vw,48px);align-items:start;text-align:left">
+    <div style="display:flex;flex-direction:column;gap:14px;max-width:320px;text-align:left;align-items:flex-start">
+      <a href="/" aria-label="weYou World home" style="text-decoration:none;display:inline-flex;align-items:center">
+        <span aria-hidden="true" style="position:relative;display:inline-flex;align-items:flex-start;font-weight:500;font-size:22px;letter-spacing:.01em;animation:wmBob 6s ease-in-out infinite"><span data-t="we" style="display:inline-block;color:#7fd4e8;animation:{{ wmA }} 18s ease-in-out infinite"></span><span data-t="You" style="display:inline-block;color:#c9a9e0;animation:{{ wmB }} 18s ease-in-out infinite -12s"></span><sup data-t="™" style="font-size:.34em;line-height:1;margin-left:.06em;color:rgba(255,255,255,.45);align-self:flex-start;position:relative;top:.25em"></sup><span data-t="World" style="display:inline-block;margin-left:.2em;color:#e8d078;animation:{{ wmC }} 18s ease-in-out infinite -6s"></span><span style="position:absolute;right:1.55em;top:-.42em;font-size:.38em;line-height:1;color:#e8d078;text-shadow:0 0 8px rgba(232,208,120,.9);pointer-events:none;animation:wmStar 5s ease-in-out infinite 1s">✦</span></span>
+      </a>
+      <p style="margin:0;color:#94a3b8;font-size:13px;line-height:1.65;font-weight:300">The intelligent web, app, and design wing of weYou X built for modern enterprise.</p>
     </div>
-    <div style="display:flex;flex-wrap:wrap;justify-content:{{ jc }};gap:40px">
-      <div style="display:flex;flex-direction:column;gap:8px"><span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#e8d078;margin-bottom:4px">Pages</span><a href="Home.dc.html" style="color:rgba(255,255,255,.4)">Home</a><a href="About.dc.html" style="color:rgba(255,255,255,.4)">About</a><a href="Features.dc.html" style="color:rgba(255,255,255,.4)">Features</a><a href="Contact.dc.html" style="color:rgba(255,255,255,.4)">Contact</a></div>
-      <div style="display:flex;flex-direction:column;gap:8px"><span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#e8d078;margin-bottom:4px">Company</span><a href="mailto:info@weyoux.com" style="color:rgba(255,255,255,.4)">info@weyoux.com</a><a href="https://weyoux.com" style="color:rgba(255,255,255,.4)">weYou X</a><a href="https://legalindia.ai" style="color:rgba(255,255,255,.4)">LegalIndia.ai</a></div>
+    <div style="display:flex;flex-direction:column;gap:10px;text-align:left;align-items:flex-start">
+      <span style="font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#7a8294;margin-bottom:6px">Services</span>
+      <a href="/features" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">Web &amp; Motion Design</a>
+      <a href="/features" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">Webflow Development</a>
+      <a href="/features" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">Enterprise Development</a>
+      <a href="/features" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">Framer Development</a>
+      <a href="/features" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">Figma to Webflow</a>
+      <a href="/features" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">Website Migration Service</a>
+      <a href="/features" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">CRO, SEO &amp; AEO</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;text-align:left;align-items:flex-start">
+      <span style="font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#7a8294;margin-bottom:6px">weYou World</span>
+      <a href="/" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">Home</a>
+      <a href="/about" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">About</a>
+      <a href="/features" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">Features</a>
+      <a href="/contact" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">Contact</a>
+      <a href="/contact" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">Inquiries</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;text-align:left;align-items:flex-start">
+      <span style="font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#7a8294;margin-bottom:6px">weYouX Family</span>
+      <a href="https://weyoux.com" target="_blank" rel="noopener noreferrer" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">WeYouX</a>
+      <a href="https://weyouenvoy.com" target="_blank" rel="noopener noreferrer" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">weYou enVoy</a>
+      <a href="https://legalindia.ai" target="_blank" rel="noopener noreferrer" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">LegalIndia.ai</a>
+      <a href="/" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">weYou World</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;text-align:left;align-items:flex-start">
+      <span style="font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#7a8294;margin-bottom:6px">Contact</span>
+      <a href="mailto:sales@weyoux.com" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">sales@weyoux.com</a>
+      <a href="https://wa.me/919036992826" target="_blank" rel="noopener noreferrer" style="color:#cbd5e1;text-decoration:none;transition:color .2s" style-hover="color:#fff">WhatsApp +91 90369 92826</a>
+      <span style="color:#94a3b8">India</span>
     </div>
   </div>
-  <div style="max-width:1100px;margin:28px auto 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);display:flex;flex-wrap:wrap;justify-content:{{ jc }};gap:12px;font-size:11px">
-    <span>Bangalore · © 2026 weYou World — a division of weYou X</span>
-    <div style="display:flex;gap:16px"><a href="#" style="color:rgba(255,255,255,.4)">Privacy</a><a href="#" style="color:rgba(255,255,255,.4)">Terms</a></div>
+  <div style="max-width:1200px;margin:48px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-size:12px;color:#64748b">
+    <span>© 2026 WeYouX. All rights reserved.</span>
+    <div style="display:flex;gap:16px;align-items:center">
+      <a href="/privacy" style="color:#64748b;text-decoration:none;transition:color .2s" style-hover="color:#94a3b8">Privacy Policy</a>
+      <span>·</span>
+      <a href="/terms" style="color:#64748b;text-decoration:none;transition:color .2s" style-hover="color:#94a3b8">Terms of Service</a>
+      <span>·</span>
+      <span>India</span>
+    </div>
   </div>
 </footer>
 </x-dc>

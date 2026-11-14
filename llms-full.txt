@@ -1,6 +1,6 @@
-# weYou World — full reference
+weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.
 
-> weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.
+# weYou World — full reference
 
 Part of weYou X (https://weyoux.com). Short version: https://weyouworld.com/llms.txt
 
@@ -25,15 +25,27 @@ Most websites are brochures with a contact form. A weYou World site or app arriv
 ## Stack
 Payments (Stripe, Razorpay, UPI) · CRM (HubSpot, Salesforce) · Commerce (Shopify, headless) · Analytics (GA4, Segment) · Infrastructure (Next.js on the edge, AWS, Cloudflare).
 
-## Origin
-Founded on total synthesis — the "we" of our engineering binding with "You," the visionary business. We started weYou World because businesses were made to choose between intelligent and beautiful; every site we build is both.
-
 ## FAQ
-Do you only work in India? No — we are based in Bangalore and build for clients worldwide; payment, CRM and analytics stacks are chosen per market.
+What is weYou World? weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.
+Do you only work in India? No — we are based in Bengaluru and build for clients worldwide; payment, CRM and analytics stacks are chosen per market.
 Do you rebuild or integrate? Both: new sites at world standard, or payments, CRM and analytics wired into an existing site.
 What is GEO? Generative Engine Optimisation — structuring your site's content and data so search and AI answer engines can read it and cite it accurately.
 How fast? Discovery call within one working day; typical MVP in about 14 days; two-week sprints after.
 How does enVoy relate? enVoy is weYou X's customer-communication product (WhatsApp, voice, chat). weYou World wires it into the sites and apps it builds. https://weyouenvoy.com
 
 ## Contact
-Web https://weyouworld.com · Email info@weyoux.com · WhatsApp +91 90369 92826 (https://wa.me/919036992826) · Parent https://weyoux.com · Bangalore, Karnataka, India — serving clients worldwide.
+Web https://weyouworld.com · Email info@weyoux.com · WhatsApp +91 90369 92826 (https://wa.me/919036992826) · Parent https://weyoux.com · Bengaluru, Karnataka, India — serving clients worldwide.
+
+## Core Capabilities & Services
+- Design:
+  - Web Design (Responsive UI/UX, Design Systems)
+  - Motion Design (Micro-interactions, Interactive prototypes)
+- Development:
+  - Webflow Development (CMS architecture, Client-First standards)
+  - Enterprise Development (Next.js, Edge deployment, Custom APIs)
+  - Framer Development (Interactive visual sites, High-velocity landing pages)
+  - Figma to Webflow (Pixel-perfect conversion, Design tokens)
+  - Website Migration Service (Zero-downtime, SEO equity preservation)
+- Growth:
+  - CRO (Conversion Rate Optimization, Funnel tuning, A/B testing)
+  - SEO & AEO (Search Engine Optimization, Generative Answer Engine Optimization, Schema.org)

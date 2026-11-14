@@ -1,6 +1,6 @@
-# weYou World
+weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.
 
-> weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.
+# weYou World
 
 Part of weYou X (https://weyoux.com).
 
@@ -35,5 +35,10 @@ Brand: weYou World (also "weYou™ World"). Parent: weYou X. Not to be confused 
 ## Contact
 - Email: info@weyoux.com
 - WhatsApp: +91 90369 92826 (https://wa.me/919036992826)
-- Bangalore, Karnataka, India — clients worldwide
+- Bengaluru, Karnataka, India — clients worldwide
 - Full reference: https://weyouworld.com/llms-full.txt
+
+## Core Capabilities & Services
+- Design: Web Design, Motion Design
+- Development: Webflow Development, Enterprise Development, Framer Development, Figma to Webflow, Website Migration Services
+- Growth: Conversion Rate Optimization (CRO), SEO & AEO (Answer Engine Optimization)

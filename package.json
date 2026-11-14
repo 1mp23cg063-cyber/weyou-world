@@ -5,7 +5,8 @@
   "type": "module",
   "description": "weYou World website — design-component sources in src/, pre-rendered to static HTML by build/prerender.mjs",
   "scripts": {
-    "build": "node build/prerender.mjs"
+    "build": "node build/prerender.mjs",
+    "test": "node --test tests/*.test.js"
   },
   "devDependencies": {
     "playwright": "^1.61.0"

@@ -129,7 +129,7 @@
       }
     }
   `;
-  var FULL_PAGE_CSS = "html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}";
+  var FULL_PAGE_CSS = "html,body{min-height:100%;margin:0}#dc-root,#dc-root>.sc-host{min-height:100%}";
   function rootNameForDocument(doc, loc) {
     let bootPath = loc.pathname || "";
     if (!/\.dc\.html?$/i.test(safeDecode(bootPath))) {
@@ -416,6 +416,7 @@
     const propGetters = [];
     const pseudoClasses = [];
     let hintSize = null;
+    const BOOLEAN_DOM_PROPS = new Set(["required", "disabled", "readOnly", "checked", "multiple", "autoFocus", "hidden", "selected", "loop", "muted", "autoPlay", "controls", "open"]);
     for (const { name, value } of [...node.attributes]) {
       if (name === "sc-name" || name === "data-dc-tpl") continue;
       let key = name;
@@ -435,8 +436,15 @@
       } else {
         if (key === "class") key = "className";
         else if (key === "for") key = "htmlFor";
+        else if (key === "readonly") key = "readOnly";
+        else if (key === "autofocus") key = "autoFocus";
+        else if (key === "autocomplete") key = "autoComplete";
         else if (key.startsWith("on"))
           key = EVENT_MAP[key] || "on" + key[2].toUpperCase() + key.slice(3);
+        if (BOOLEAN_DOM_PROPS.has(key) && (value === "" || value === key)) {
+          propGetters.push([key, () => true]);
+          continue;
+        }
       }
       propGetters.push([key, compileAttr(value)]);
     }
@@ -1140,6 +1148,8 @@
   }
 
   // src/cdn.ts
+  var REACT_LOCAL_URL = "/assets/vendor/react.production.min.js";
+  var REACT_DOM_LOCAL_URL = "/assets/vendor/react-dom.production.min.js";
   var REACT_URL = "https://unpkg.com/react@18.3.1/umd/react.production.min.js";
   var REACT_SRI = "sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z";
   var REACT_DOM_URL = "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js";
@@ -1841,8 +1851,8 @@
     const react = cdnScriptFor(REACT_URL, REACT_SRI);
     const reactDom = cdnScriptFor(REACT_DOM_URL, REACT_DOM_SRI);
     return Promise.all([
-      loadScript(react.src, react.integrity),
-      loadScript(reactDom.src, reactDom.integrity)
+      loadScript(REACT_LOCAL_URL, REACT_SRI).catch(() => loadScript(react.src, react.integrity)),
+      loadScript(REACT_DOM_LOCAL_URL, REACT_DOM_SRI).catch(() => loadScript(reactDom.src, reactDom.integrity))
     ]).then(() => void 0);
   }
   function init() {
