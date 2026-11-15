@@ -21,16 +21,15 @@ test('Security Headers: Internal Assets Protected with noindex', () => {
   const headers = fs.readFileSync(path.join(ROOT, '_headers'), 'utf8');
   assert.ok(headers.includes('/assets/dc/*'), '/assets/dc/* rule configured');
   assert.ok(headers.includes('/assets/vendor/*'), '/assets/vendor/* rule configured');
-  assert.ok(headers.includes('/src/*'), '/src/* rule configured');
-  assert.ok(headers.includes('/build/*'), '/build/* rule configured');
 });
 
 test('Robots.txt: Crawl boundaries configured', () => {
   const robots = fs.readFileSync(path.join(ROOT, 'robots.txt'), 'utf8');
-  assert.ok(robots.includes('Disallow: /build/'), 'robots.txt disallows /build/');
-  assert.ok(robots.includes('Disallow: /src/'), 'robots.txt disallows /src/');
-  assert.ok(robots.includes('Disallow: /assets/dc/'), 'robots.txt disallows /assets/dc/');
-  assert.ok(robots.includes('Disallow: /assets/vendor/'), 'robots.txt disallows /assets/vendor/');
+  assert.ok(!robots.includes('Disallow: /build/'), 'robots.txt does not disallow undeployed /build/');
+  assert.ok(!robots.includes('Disallow: /src/'), 'robots.txt does not disallow undeployed /src/');
+  assert.ok(!robots.includes('Disallow: /assets/dc/'), 'robots.txt does not disallow /assets/dc/');
+  assert.ok(!robots.includes('Disallow: /assets/vendor/'), 'robots.txt does not disallow /assets/vendor/');
+  assert.ok(robots.includes('Disallow: /*?utm_*'), 'robots.txt disallows tracking query params');
   assert.ok(robots.includes('Sitemap: https://weyouworld.com/sitemap.xml'), 'robots.txt declares canonical sitemap');
 });
 

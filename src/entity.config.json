@@ -1,0 +1,103 @@
+{
+  "sameAs": [],
+  "organization": {
+    "@id": "https://weyouworld.com/#org",
+    "name": "weYou World",
+    "alternateName": [
+      "weYou™ World"
+    ],
+    "url": "https://weyouworld.com/",
+    "logo": "https://weyouworld.com/logo.png",
+    "description": "weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.",
+    "email": "info@weyoux.com",
+    "telephone": "+91 90369 92826",
+    "areaServed": "Worldwide",
+    "parentOrganization": {
+      "@id": "https://weyoux.com/#org"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service and sales",
+      "telephone": "+91 90369 92826",
+      "email": "info@weyoux.com",
+      "areaServed": "Worldwide"
+    }
+  },
+  "servicePillars": [
+    {
+      "name": "Design",
+      "services": [
+        {
+          "name": "Web Design",
+          "description": "Responsive UI/UX design, interactive interface systems, and enterprise brand presentation for client-facing websites and applications.",
+          "provider": { "@id": "https://weyouworld.com/#org" },
+          "areaServed": "Worldwide"
+        },
+        {
+          "name": "Motion Design",
+          "description": "Micro-interactions, animation choreography, dynamic interface feedback, and interactive prototypes built for modern digital experiences.",
+          "provider": { "@id": "https://weyouworld.com/#org" },
+          "areaServed": "Worldwide"
+        }
+      ]
+    },
+    {
+      "name": "Development",
+      "services": [
+        {
+          "name": "Webflow Development",
+          "description": "Production Webflow websites engineered with scalable CMS architecture, custom code extensions, and Client-First structural standards.",
+          "provider": { "@id": "https://weyouworld.com/#org" },
+          "areaServed": "Worldwide"
+        },
+        {
+          "name": "Enterprise Development",
+          "description": "Full-stack web applications and custom platforms built on Next.js, React, edge rendering infrastructure, APIs, and microservices.",
+          "provider": { "@id": "https://weyouworld.com/#org" },
+          "areaServed": "Worldwide"
+        },
+        {
+          "name": "Framer Development",
+          "description": "High-velocity landing pages and expressive, interaction-rich websites built natively in Framer for modern brands and product teams.",
+          "provider": { "@id": "https://weyouworld.com/#org" },
+          "areaServed": "Worldwide"
+        },
+        {
+          "name": "Figma to Webflow",
+          "description": "Pixel-accurate translation from Figma design systems into responsive, clean Webflow pages with strict adherence to design tokens.",
+          "provider": { "@id": "https://weyouworld.com/#org" },
+          "areaServed": "Worldwide"
+        },
+        {
+          "name": "Website Migration Service",
+          "description": "Systematic migration across CMS platforms with zero downtime, preservation of search ranking equity, and redirect architecture mapping.",
+          "provider": { "@id": "https://weyouworld.com/#org" },
+          "areaServed": "Worldwide"
+        }
+      ]
+    },
+    {
+      "name": "Growth",
+      "services": [
+        {
+          "name": "Conversion Rate Optimization (CRO)",
+          "description": "User funnel auditing, user journey refinement, multivariate testing, and conversion architecture tuning to turn visitors into pipeline.",
+          "provider": { "@id": "https://weyouworld.com/#org" },
+          "areaServed": "Worldwide"
+        },
+        {
+          "name": "SEO & AEO (Search & Answer Engine Optimization)",
+          "description": "Structured data schema, performance-minded builds, clean URL structures, and Generative Engine Optimization for AI search engine retrieval.",
+          "provider": { "@id": "https://weyouworld.com/#org" },
+          "areaServed": "Worldwide"
+        }
+      ]
+    }
+  ]
+}

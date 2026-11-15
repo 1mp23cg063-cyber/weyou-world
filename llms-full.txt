@@ -1,4 +1,4 @@
-weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.
+> weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.
 
 # weYou World — full reference
 
@@ -13,7 +13,7 @@ Most websites are brochures with a contact form. A weYou World site or app arriv
 1. Websites — enterprise websites; edge rendering; payments (Stripe, Razorpay) and CRM (HubSpot, Salesforce) connected on the first commit.
 2. Apps — mobile and web apps designed and built alongside the website, on one design system.
 3. Design — brand, interface and motion design; design systems; accessibility.
-4. SEO — structured data, llms.txt, sitemaps, Core Web Vitals, programmatic pages.
+4. SEO — structured data, llms.txt, sitemaps, performance-minded architecture, programmatic pages.
 5. Storefronts — Shopify and headless commerce; UPI, cards, BNPL; abandoned-cart recovery; inventory sync.
 6. Analytics — GA4, Segment, attribution, conversion tracking, weekly reports.
 
@@ -30,22 +30,30 @@ What is weYou World? weYou World is the web, app and design wing of weYou X — 
 Do you only work in India? No — we are based in Bengaluru and build for clients worldwide; payment, CRM and analytics stacks are chosen per market.
 Do you rebuild or integrate? Both: new sites at world standard, or payments, CRM and analytics wired into an existing site.
 What is GEO? Generative Engine Optimisation — structuring your site's content and data so search and AI answer engines can read it and cite it accurately.
-How fast? Discovery call within one working day; typical MVP in about 14 days; two-week sprints after.
+What is our launch timeline? Discovery call within one working day; typical MVP in about 14 days; two-week sprints after.
 How does enVoy relate? enVoy is weYou X's customer-communication product (WhatsApp, voice, chat). weYou World wires it into the sites and apps it builds. https://weyouenvoy.com
+
+## Pages
+- Home: https://weyouworld.com/
+- Features: https://weyouworld.com/features
+- About: https://weyouworld.com/about
+- Contact: https://weyouworld.com/contact
+- Privacy Policy: https://weyouworld.com/privacy
+- Terms of Service: https://weyouworld.com/terms
 
 ## Contact
 Web https://weyouworld.com · Email info@weyoux.com · WhatsApp +91 90369 92826 (https://wa.me/919036992826) · Parent https://weyoux.com · Bengaluru, Karnataka, India — serving clients worldwide.
 
 ## Core Capabilities & Services
 - Design:
-  - Web Design (Responsive UI/UX, Design Systems)
-  - Motion Design (Micro-interactions, Interactive prototypes)
+  - Web Design (Responsive UI/UX design, interactive interface systems, and enterprise brand presentation for client-facing websites and applications.)
+  - Motion Design (Micro-interactions, animation choreography, dynamic interface feedback, and interactive prototypes built for modern digital experiences.)
 - Development:
-  - Webflow Development (CMS architecture, Client-First standards)
-  - Enterprise Development (Next.js, Edge deployment, Custom APIs)
-  - Framer Development (Interactive visual sites, High-velocity landing pages)
-  - Figma to Webflow (Pixel-perfect conversion, Design tokens)
-  - Website Migration Service (Zero-downtime, SEO equity preservation)
+  - Webflow Development (Production Webflow websites engineered with scalable CMS architecture, custom code extensions, and Client-First structural standards.)
+  - Enterprise Development (Full-stack web applications and custom platforms built on Next.js, React, edge rendering infrastructure, APIs, and microservices.)
+  - Framer Development (High-velocity landing pages and expressive, interaction-rich websites built natively in Framer for modern brands and product teams.)
+  - Figma to Webflow (Pixel-accurate translation from Figma design systems into responsive, clean Webflow pages with strict adherence to design tokens.)
+  - Website Migration Service (Systematic migration across CMS platforms with zero downtime, preservation of search ranking equity, and redirect architecture mapping.)
 - Growth:
-  - CRO (Conversion Rate Optimization, Funnel tuning, A/B testing)
-  - SEO & AEO (Search Engine Optimization, Generative Answer Engine Optimization, Schema.org)
+  - Conversion Rate Optimization (CRO) (User funnel auditing, user journey refinement, multivariate testing, and conversion architecture tuning to turn visitors into pipeline.)
+  - SEO & AEO (Search & Answer Engine Optimization) (Structured data schema, performance-minded builds, clean URL structures, and Generative Engine Optimization for AI search engine retrieval.)

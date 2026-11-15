@@ -1,9 +1,9 @@
 # weYou World — SEO bundle (reference copy of the served files; the live files are llms.txt, robots.txt, sitemap.xml in the repo root)
 
 ===== llms.txt =====
-# weYou World
-
 > weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.
+
+# weYou World
 
 Part of weYou X (https://weyoux.com).
 
@@ -13,7 +13,7 @@ Need customer communication (WhatsApp, voice, chat)? That's enVoy — https://we
 - Websites — enterprise websites with payments, CRM and analytics connected from the first commit
 - Apps — mobile and web apps built alongside the website on one design system
 - Design — brand, interface and design systems for what customers see
-- SEO — structured data, fast pages, clean URLs, sitemap and llms.txt
+- SEO — structured data, performance-minded builds, clean URLs, sitemap and llms.txt
 - Storefronts — Shopify and headless commerce, UPI, cards and BNPL
 - Analytics — GA4, Segment, attribution and reporting
 
@@ -25,6 +25,8 @@ Discover, Architect, Build & evolve. Two-week sprints with live demos; a typical
 - Features: https://weyouworld.com/features
 - About: https://weyouworld.com/about
 - Contact: https://weyouworld.com/contact
+- Privacy Policy: https://weyouworld.com/privacy
+- Terms of Service: https://weyouworld.com/terms
 
 ## The weYou X family
 - weYou X (https://weyoux.com) — parent company
@@ -40,6 +42,11 @@ Brand: weYou World (also "weYou™ World"). Parent: weYou X. Not to be confused 
 - WhatsApp: +91 90369 92826 (https://wa.me/919036992826)
 - Bengaluru, Karnataka, India — clients worldwide
 - Full reference: https://weyouworld.com/llms-full.txt
+
+## Core Capabilities & Services
+- Design: Web Design, Motion Design
+- Development: Webflow Development, Enterprise Development, Framer Development, Figma to Webflow, Website Migration Service
+- Growth: Conversion Rate Optimization (CRO), SEO & AEO (Search & Answer Engine Optimization)
 
 ===== robots.txt =====
 # robots.txt — weYou World (a division of weYou X)
@@ -66,13 +73,6 @@ User-agent: Meta-ExternalAgent
 User-agent: Applebot-Extended
 User-agent: CCBot
 Allow: /
-Disallow: /assets/dc/
-Disallow: /src/
-Disallow: /dev-log/
-Disallow: /build/
-Disallow: /package.json
-Disallow: /CLAUDE.md
-Disallow: /seo/
 Disallow: /*?utm_*
 Disallow: /*?fbclid=
 Disallow: /*?gclid=
@@ -84,26 +84,38 @@ Sitemap: https://weyouworld.com/sitemap.xml
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://weyouworld.com/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://weyouworld.com/features</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://weyouworld.com/about</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://weyouworld.com/contact</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://weyouworld.com/privacy</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://weyouworld.com/terms</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

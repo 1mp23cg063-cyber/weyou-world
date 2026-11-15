@@ -22,14 +22,6 @@ User-agent: Meta-ExternalAgent
 User-agent: Applebot-Extended
 User-agent: CCBot
 Allow: /
-Disallow: /assets/dc/
-Disallow: /assets/vendor/
-Disallow: /src/
-Disallow: /dev-log/
-Disallow: /build/
-Disallow: /package.json
-Disallow: /CLAUDE.md
-Disallow: /seo/
 Disallow: /*?utm_*
 Disallow: /*?fbclid=
 Disallow: /*?gclid=

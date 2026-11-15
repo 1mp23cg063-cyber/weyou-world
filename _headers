@@ -17,21 +17,3 @@
 /assets/dc/*
   Cache-Control: public, max-age=300
   X-Robots-Tag: noindex, nofollow
-
-/src/*
-  X-Robots-Tag: noindex, nofollow
-
-/dev-log/*
-  X-Robots-Tag: noindex, nofollow
-
-/build/*
-  X-Robots-Tag: noindex, nofollow
-
-/CLAUDE.md
-  X-Robots-Tag: noindex, nofollow
-
-/package.json
-  X-Robots-Tag: noindex, nofollow
-
-/seo/*
-  X-Robots-Tag: noindex, nofollow

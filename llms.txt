@@ -1,4 +1,4 @@
-weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.
+> weYou World is the web, app and design wing of weYou X — it designs and builds the websites and apps enterprises put in front of their customers.
 
 # weYou World
 
@@ -10,7 +10,7 @@ Need customer communication (WhatsApp, voice, chat)? That's enVoy — https://we
 - Websites — enterprise websites with payments, CRM and analytics connected from the first commit
 - Apps — mobile and web apps built alongside the website on one design system
 - Design — brand, interface and design systems for what customers see
-- SEO — structured data, fast pages, clean URLs, sitemap and llms.txt
+- SEO — structured data, performance-minded builds, clean URLs, sitemap and llms.txt
 - Storefronts — Shopify and headless commerce, UPI, cards and BNPL
 - Analytics — GA4, Segment, attribution and reporting
 
@@ -22,6 +22,8 @@ Discover, Architect, Build & evolve. Two-week sprints with live demos; a typical
 - Features: https://weyouworld.com/features
 - About: https://weyouworld.com/about
 - Contact: https://weyouworld.com/contact
+- Privacy Policy: https://weyouworld.com/privacy
+- Terms of Service: https://weyouworld.com/terms
 
 ## The weYou X family
 - weYou X (https://weyoux.com) — parent company
@@ -40,5 +42,5 @@ Brand: weYou World (also "weYou™ World"). Parent: weYou X. Not to be confused 
 
 ## Core Capabilities & Services
 - Design: Web Design, Motion Design
-- Development: Webflow Development, Enterprise Development, Framer Development, Figma to Webflow, Website Migration Services
-- Growth: Conversion Rate Optimization (CRO), SEO & AEO (Answer Engine Optimization)
+- Development: Webflow Development, Enterprise Development, Framer Development, Figma to Webflow, Website Migration Service
+- Growth: Conversion Rate Optimization (CRO), SEO & AEO (Search & Answer Engine Optimization)
